@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="Swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
+    <link rel="stylesheet" href="style/ubislider.min.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -325,7 +326,7 @@
                         <div class="list-product mg-top-10">
                             <div class="col-xs-6 col-sm-3 col-md-2 pd-5">
                                 <div class="pd-5 product">
-                                    <div class="product-info" data-toggle="modal" data-target="#modal-product" onclick="getSwiper()">
+                                    <div class="product-info" data-toggle="modal" data-target="#modal-product">
                                         <!-- <div class="images-product" style="background-image: url('images/product/phone1.png');">
                                         </div> -->
                                         <div class="product-img">
@@ -399,82 +400,88 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" tabindex="-1" role="dialog" id="modal-product">
+                        <div class="modal fade" tabindex="" role="dialog" id="modal-product">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header bg-vionli text-center">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1">
+                                            <img src="icon/remove.png" width="18px">
                                         </button>
                                         <span class="text-white">
-                                            Thông tin sản phẩm và nhà cung cấp
+                                            Sản phẩm của bạn
                                         </span>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="col-sm-6 pd-10 border-solid-black" style="background: #d9d9d9">
-                                                <p>Iphone</p>
-                                                <span>Giá bán</span>
-                                                <span class="pull-right">8.000.000 VNĐ</span>
-                                                <div class="clearfix"></div>
-                                                <span>Hoa hồng</span>
-                                                <span class="pull-right text-danger">1.000.000 VNĐ</span>
-                                            </div>
-                                            <div class="col-sm-6 pd-10 border-solid-black" style="background: #d9d9d9;">
-                                                <p>Shop Điện thoại</p>
-                                                <span>Mã sản phẩm</span>
-                                                <span class="pull-right">NCC231</span>
-                                                <div class="clearfix"></div>
-                                                <span>Mã nhà cung cấp</span>
-                                                <span class="pull-right">GT024</span>
-                                            </div>
-                                            <div class="clearfix pd-10"></div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="thumbnail">
-                                                        <img src="images/product/phone1.png" id="imageProduct">
-                                                    </div>
-                                                    <div class="swiper-container">
-                                                        <div class="swiper-wrapper">
-                                                            <div class="swiper-slide tn-product active">
-                                                                <img src="images/product/phone1.png" width="100%">
-                                                            </div>
-                                                            <div class="swiper-slide tn-product">
-                                                                <img src="images/product/phone2.png" width="100%">
-                                                            </div>
-                                                        </div>
-                                                        <!-- Add Pagination -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="ubislider-image-container" data-ubislider="#slider-mobile" id="imageSlider-mobile"></div>
+                                                <div class="ubislider" id="slider-mobile">
+                                                    <a class="arrow prev"></a>
+                                                    <a class="arrow next"></a>
+                                                    <ul class="ubislider-inner">
+                                                       <li class="active">
+                                                            <img src="images/product/phone1.png">
+                                                        </li>
+                                                        <li>
+                                                            <img src="images/product/phone2.png">
+                                                        </li>
+                                                        <li>
+                                                            <img src="images/product/phone3.png">
+                                                        </li>
+                                                        <li>
+                                                            <img src="images/product/phone3.png">
+                                                        </li>
+                                                        <li>
+                                                            <img src="images/product/phone3.png">
+                                                        </li>
+                                                    </ul>
                                                 </div>
-                                                <div class="col-sm-8">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <h2>Điện thoại xịn</h2>
+                                                <div class="table-responsive">
                                                     <table class="table">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td colspan="2">Thông số chi tiết</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    Màn hình
-                                                                </td>
-                                                                <td>
-                                                                    Retina
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    CPU
-                                                                </td>
-                                                                <td>
-                                                                    Apple A8, 2 nhân, 1.4 GHz
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
+                                                        <tr>
+                                                            <td>Mã sản phẩm</td>
+                                                            <td>#FBGDK!1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ngày đăng</td>
+                                                            <td>30/06/2016</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Giá bán</td>
+                                                            <td>30.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Giá chia sẻ</td>
+                                                            <td class="text-green">10.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Danh mục</td>
+                                                            <td>Sản phẩm tổng hợp</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Số lượng</td>
+                                                            <td>10</td>
+                                                        </tr>
                                                     </table>
+                                                </div>        
+                                                <div class="form-group text-center" style="max-width: 300px">
+                                                    <button class="btn btn-success width-full btn-lg" data-toggle="modal" data-target="#modal-product-receive">Chia sẻ sản phẩm</button>
                                                 </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <hr />
+                                            <div class="col-xs-12">
+                                                <p>Giá bán xe đã bao gồm thuế VAT, không bao gồm thuế trước bạ và chi phí làm giấy tờ, biển số</p>
+                                                <p>Khách hàng nhận xe và làm thủ tục giấy tờ tại đại lý chính hãng</p>
+                                                <p>Hàng đã nhận không được đổi trả (điều kiện đổi trả theo quy định của Honda Việt Nam)</p>
+                                                <p>Thông tin bảo hành: 3 năm / 30.000 km (Tùy điều kiện nào đến trước)</p>
+                                                <p>Đối với đơn hàng thanh toán trả sau (COD), sau 5 ngày nếu khách hàng không đến nhận xe và thanh toán tại Head/Showroom thì Đơn hàng sẽ tự động hủy</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>                        
                                 </div>
                             </div>
                         </div>
@@ -485,16 +492,19 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1">
                                             <img src="icon/remove.png" width="18px">
                                         </button>
+                                        <button type="button" class="close pull-left backStep hidden" aria-label="Back" style="opacity: 1;">
+                                            <img src="icon/back.png" width="25px">
+                                        </button>
                                         <span class="text-white">
-                                            Dành cho cộng tác viên
+                                            Chia sẻ sản phẩm
                                         </span>
                                     </div>
-                                    <div class="modal-body pd-5">
+                                    <div class="modal-body pd-0">
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-sm-3">
-                                                    <div class="pd-5 product">
-                                                        <div class="product-info" data-toggle="modal" data-target="#modal-product" onclick="getSwiper()">
+                                                    <div class="pd-5 product border">
+                                                        <div class="product-info">
                                                             <div class="product-img">
                                                                 <img src="images/product/phone1.png">
                                                             </div>
@@ -516,26 +526,33 @@
                                                         Chú ý: Chức năng chia sẻ sản phẩm hiển thị áp dụng cho các nhà cung cấp ở Tp. Hồ Chí Minh
                                                     </div>
                                                     <div class="row">
-                                                        <form class="col-sm-8 col-md-4">
-                                                            <div class="form-group">
-                                                                <label for="commission">Hoa hồng NCC chia sẻ</label>
-                                                                <input type="number" class="form-control" id="commission" placeholder="Hoa hồng" oninput="calCommission()">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="tip">Phí dịch vụ 30%</label>
-                                                                <input type="text" class="form-control" id="tip" placeholder="0 (VND)" readonly>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="tip-ctv">Hoa hồng CTV nhận được</label>
-                                                                <input type="text" class="form-control text-danger" id="tip-ctv" placeholder="0 (VND)" readonly>
+                                                        <form class="col-md-4">
+                                                            <div class="border-xs pd-10">
+                                                                <div class="form-group">
+                                                                    <label for="commission">Hoa hồng NCC chia sẻ</label>
+                                                                    <input type="number" class="form-control" id="commission" placeholder="Nhập hoa hồng" value='500,000' oninput="calCommission()">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="tip">Phí dịch vụ 30%</label>
+                                                                    <br />
+                                                                    <label class="" id="tip">0 VND</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="tip-ctv">Hoa hồng CTV nhận được</label>
+                                                                    <br />
+                                                                    <label class="text-danger" id="tip-ctv">0 VND</label>
+                                                                </div>
                                                             </div>
                                                         </form>
-                                                        <div class="col-sm-4 col-md-8">
+                                                        <div class="col-md-8">
                                                             <div class="form-group">
                                                                 <label for="tip-ctv">Chọn danh mục hiển thị sản phẩm</label>
                                                                 <div class="clearfix"></div>
-                                                                <select id="choseCategory" class="form-control">
+                                                                <select id="choseCategory" class="form-control width-full">
                                                                 </select>
+                                                            </div>
+                                                            <div class="model-footer text-center visible-xs" style="padding: 15px">
+                                                                <button class="btn btn-success btn-lg min-width-200">Chia sẻ</button>
                                                             </div>
                                                             <span class="note">
                                                                 <strong>Ghi chú</strong>
@@ -569,8 +586,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="model-footer text-center" style="padding-bottom: 18px">
-                                        <button class="btn btn-success btn-lg min-width-200">Chia sẻ</button>
+                                    <div class="model-footer text-center hidden-xs" style="padding-bottom: 18px">
+                                        <button class="btn btn-success btn-lg min-width-200">Chia sẻ sản phẩm</button>
                                     </div>
                                 </div>
                             </div>
@@ -606,8 +623,10 @@
                                 <div class="col-sm-6 pd-50 pd-right-bot text-center border-right-bot" style="min-height: 150px">
                                     <h4>DÀNH CHO NHÀ CUNG CẤP</h4>
                                     <br />
-                                    <p class="text-center color-150">Đăng sản phẩm của mình để bán hàng và
-                                        <br /> chia sẻ sản phẩm cho cộng tác viên bán hàng</p>
+                                    <p class="text-center color-150">
+                                        Đăng sản phẩm của mình để bán hàng và
+                                        <br /> chia sẻ sản phẩm cho cộng tác viên bán hàng
+                                    </p>
                                     <button id="dang-san-pham" class="btn btn-default btn-radius box-shadow color-150" style="min-width: 150px;">Đăng sản phẩm</button>
                                 </div>
                                 <div class="col-sm-6 pd-50 pd-right-bot text-center" style="min-height: 150px">
@@ -700,11 +719,13 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/tippy.js@2.4.1/dist/tippy.all.min.js"></script>
     <script type="text/javascript" src="Swiper/dist/js/swiper.min.js"></script>
+    <script src="js/ubislider.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://cdn.ckeditor.com/4.9.2/basic/ckeditor.js"></script>
@@ -760,6 +781,38 @@
             slidesPerView: 3,
             spaceBetween: 5,
             freeMode: true,
+        });
+
+        jQuery('#modal-product-receive').on('hidden.bs.modal', function (e) {
+            jQuery("#modal-product").modal('hide');
+        })
+
+        $(document).ready(function(){
+            $('#slider').ubislider({
+                arrowsToggle: true,
+                type: 'ecommerce',
+                hideArrows: true,
+                autoSlideOnLastClick: true,
+                modalOnClick: true,
+                onTopImageChange: function(){
+                    // $('#imageSlider img').elevateZoom();
+                }
+            });
+            $('#slider-mobile').ubislider({
+                arrowsToggle: true,
+                type: 'ecommerce',
+                hideArrows: true,
+                autoSlideOnLastClick: true,
+                modalOnClick: true,
+                onTopImageChange: function(){
+                    // $('#imageSlider img').elevateZoom();
+                }
+            });
+
+            $(".ubislider-inner > li").click(function(e) {
+                $(".ubislider-inner > li").removeClass('active');
+                $(this).addClass('active');
+            })
         });
 
         //Script chỉnh css focus Image được chọn
