@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vionli - Nơi chia sẻ cơ hội kinh doanh</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="Swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="style/ubislider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/orders.css">
+    <link rel="stylesheet" href="style/pretty-checkbox.min.css"/>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-default bg-vionli margin-0 nav-desktop">
+            <!-- Get container for device [desktop][mobile]-->
+            <ul class="nav navbar-nav navbar-left">
+                <li onmouseover="" onmouseout="" class="vionli dashboard active  parent level0">
+                    <a href="#store" class="v2-tp-ic active own-store width-100">
+                    </a>
+                    <div class="combox">
+                        <i class="fa fa-caret-up"></i>
+                    </div>
+                </li>
+                <li class="vionli public_product level0">
+                    <a href="#public_product" class="v2-tp-ic  ">
+                    </a>
+                </li>
+                <li class="vionli public_product level0">
+                    <a href="#public_product" class="v2-tp-ic  ">
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="vionli notification float-right dropdown level0">
+                    <a href="#vol_notice" class="v2-tp-ic vol_notification dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
+                    </a>
+                </li>
+                <ul class="dropdown-menu  dropdown-menu-right">
+                    <li>
+                        <div class="noti-header">
+                            <p>Thông báo</p>
+                            <small class="mark-noti-as-read pull-right">
+                                <a href="javascript:void(0)" class="marked-as-read">Đánh dấu đã đọc</a>
+                            </small>
+
+                        </div>
+                        <div class="noti-content" id="vendor-admin-notification-popup">
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">p _fb has placed a COD order 100000025 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2018-01-30 14:58:07</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">hocdeptrai _fb has placed a COD order 100000021_1 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2018-01-27 04:20:08</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">HUy _fb has placed a COD order 100000019_1 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2018-01-27 03:30:09</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">aaa _fb has placed a COD order 100000016 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2017-12-30 03:20:05</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">Cadeptrai _fb has placed a COD order 100000015 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2017-12-30 03:18:06</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">nguyenthanhtoan _fb has placed a COD order 100000014 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2017-12-30 03:12:07</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <style type="text/css">
+                                .navbar-nav>li>.dropdown-menu {
+                                    margin-top: 34px;
+                                }
+                            </style>
+                        </div>
+                        <div class="noti-bottom">
+                            <a href="https://dev.vionli.com/index.php/1456595524453177/notification/index/">Xem tất cả</a>
+                        </div>
+                    </li>
+                </ul>
+                <li class="vionli notification float-right dropdown level0">
+                    <a href="#vol_notice" class="v2-tp-ic vol_notification dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
+                    </a>
+                </li>
+                <li class="vionli share level0">
+                    <a href="#knowledge" class="v2-tp-ic">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="menuUser" style="background-color: #fff">
+            <div class="container">
+                <ul class="nav nav-pills nav-justified vionli-menu bg-white">
+                    <li class="active">
+                        <a href="#">
+                            <!-- <i class="fa fa-facebook-square fa-fw fa-2x"></i> -->
+                            <img src="icon/fanpage.png" height="50px">
+                            <p class="margin-0">Fanpage</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- <i class="fa fa-list fa-fw fa-2x"></i> -->
+                            <img src="icon/product.png" height="50px">
+                            <p class="margin-0">Sản phẩm</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- <i class="fa fa-shopping-cart fa-fw fa-2x"></i> -->
+                            <img src="icon/mua-hang.png" height="50px">
+                            <p class="margin-0">Đơn hàng</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- <i class="fa fa-bar-chart fa-fw fa-2x"></i> -->
+                            <img src="icon/report.png" height="50px">
+                            <p class="margin-0">Thống kê</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- <i class="fa fa-money fa-fw fa-2x"></i> -->
+                            <img src="icon/loi-nhuan.png" height="50px">
+                            <p class="margin-0">Doanh thu</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- <i class="fa fa-cogs fa-fw fa-2x"></i> -->
+                            <img src="icon/setting.png" height="50px">
+                            <p class="margin-0">Cài dặt</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form action="" class="text-center pd-20" id="formSearch" style="padding-left: 0px; padding-right: 0px">
+            <div class="input-group text-center">
+                <input type="search" name="search" id="search" class="form-control" placeholder="Tìm kiếm sản phẩm" style="border-radius: unset; border-right: unset; padding-left: 20px; height: 40px; font-size: 14px; border: unset; border-bottom: solid 0.1px #969696">
+                <span id="icon-search" class="input-group-addon" style="border-radius: unset; border: unset; border-bottom: solid 0.1px #969696">
+                    <a class="text-red">
+                        <i class="fa fa-remove"></i>
+                    </a>
+                </span>
+            </div>
+        </form>
+        <div class="clearfix"></div>
+    </header>
+    <!-- Done Header -->
+
+    <div class="container">
+        <div class="content">
+            <ul class="nav nav-tabs nav-justified width-full bg-white" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#yourProduct" aria-controls="yourProduct" role="tab" data-toggle="tab">Đơn hàng của bạn</a>
+                </li>
+                <li role="presentation">
+                    <a href="#recieveProduct" aria-controls="recieveProduct" role="tab" data-toggle="tab">Đơn hàng nhận bán</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+            <div class="tab-content">
+                <!-- Tab sản phẩm của bạn -->
+                <div role="tabpanel" class="tab-pane active" id="yourProduct">
+                    <div class="tab-filter bg-dark-444">
+                        <div class="form-inline pd-5">
+                            <div class="pull-right">
+                                <div class="form-group hidden-xs search_form" style="width: 180px !important">
+                                    <div class="input-group text-center">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                        <input type="search" name="search" class="form-control input-sm" placeholder="Tìm kiếm">
+                                    </div>
+                                </div>
+                                <div class="form-group visible-xs-inline search_show" style="margin-left: 5px;">
+                                    <button class="btn btn-white-trans btn-sm" >
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="form-group" style="margin-left: 5px; margin-right: 5px">
+                                    <div class="dropdown">
+                                        <button class="btn btn-white-trans btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Lọc
+                                            <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu pull-right dropdown-filter" aria-labelledby="dropdownMenu1">
+                                            <div class="">
+                                                <h5>Theo trạng thái đơn</h5>
+                                                <hr />
+                                                <div class="">
+                                                    <div class="pretty p-icon">
+                                                        <input type="checkbox">
+                                                        <div class="state">
+                                                            <i class="icon fa fa-check text-primary"></i>
+                                                            <label>Phát thành công</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pretty p-icon">
+                                                        <input type="checkbox">
+                                                        <div class="state">
+                                                            <i class="icon fa fa-check text-primary"></i>
+                                                            <label>Đang phát</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pretty p-icon">
+                                                        <input type="checkbox">
+                                                        <div class="state">
+                                                            <i class="icon fa fa-check text-primary"></i>
+                                                            <label>Chưa gửi</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pretty p-icon">
+                                                        <input type="checkbox">
+                                                        <div class="state">
+                                                            <i class="icon fa fa-check text-primary"></i>
+                                                            <label>Hủy hàng</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div class="">
+                                                    <button class="btn btn-default btn-sm width-full">Lọc</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white pd-5" style="border-radius: 0px 0px 10px 10px">
+                        <table class="table hidden-xs">
+                            <thead>
+                                <tr>
+                                    <th width="60px" class="text-center"></th>
+                                    <th width="350px">Thông tin khách hàng</th>
+                                    <th class="text-center">Mã đơn hàng</th>
+                                    <th width="150px" class="text-right">Ngày đặt hàng</th>
+                                    <th width="150px" class="text-center">Số sản phẩm</th>
+                                    <th width="100px" class="text-center">Tổng tiền</th>
+                                    <th width="150px" class="text-center">Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody class="list-order" id="listOrder">
+                                <tr class="bg-red order">
+                                    <td class="text-center" style="vertical-align: middle;">
+                                        <p>Chưa thanh toán</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p>Nguyễn Quang Học | <span class="text-primary">01214.823.130</span></p>
+                                        <p>Đường C1, Q.Tân bình</p>
+                                        <p>Ghi chú: Giao liền nha</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>36578563</span>
+                                    </td>
+                                    <td class="text-right">
+                                        <span>16h50, 03-05-2018</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>10</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>30,000,000</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <p>Đang phát</p>
+                                        <p>icon</p>
+                                    </td>
+                                </tr>
+                                <tr class="order">
+                                    <td colspan="7">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th width="" class="text-left">
+                                                        <span>
+                                                            <i class="fa fa-level-up fa-flip-horizontal"></i>
+                                                        </span>
+                                                        Sản phẩm
+                                                    </th>
+                                                    <th width="150px" class="text-center">Số lượng</th>
+                                                    <th width="150px" class="text-right">Đơn giá</th>
+                                                    <th width="150px" class="text-right">Thành tiền</th>
+                                                    <th width="150px" class="text-center">Mã vận đơn</th>
+                                                    <th width="150px" class="text-right">Ngày gửi</th>
+                                                    <th width="150px" class="text-center">Trạng thái</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <td class="text-left">Điện thoại 1</td>
+                                                    <td>2</td>
+                                                    <td class="text-right">10,000,000</td>
+                                                    <td class="text-right">20,000,000</td>
+                                                    <td>123456</td>
+                                                    <td class="text-right">9h00, 07-06-2018</td>
+                                                    <td>Đang gửi</td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td class="text-left">Điện thoại 1</td>
+                                                    <td>1</td>
+                                                    <td class="text-right">10,000,000</td>
+                                                    <td class="text-right">10,000,000</td>
+                                                    <td>123457</td>
+                                                    <td class="text-right">19h00, 07-06-2018</td>
+                                                    <td>Đang gửi</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>    
+                                    </td>
+                                </tr>
+                                <tr class="bg-dark order">
+                                    <td class="text-center" style="vertical-align: middle;">
+                                        <p>Đã thanh toán</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p>Nguyễn Quang Học | <span class="text-primary">01214.823.130</span></p>
+                                        <p>Đường C1, Q.Tân bình</p>
+                                        <p>Ghi chú: Giao liền nha</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>36578563</span>
+                                    </td>
+                                    <td class="text-right">
+                                        <span>16h50, 03-05-2018</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>10</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>30,000,000</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <p>Đang phát</p>
+                                        <p>icon</p>
+                                    </td>
+                                </tr>
+                                <tr class="order">
+                                    <td colspan="7">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th width="" class="text-left">
+                                                        <span>
+                                                            <i class="fa fa-level-up fa-flip-horizontal"></i>
+                                                        </span>
+                                                        Sản phẩm
+                                                    </th>
+                                                    <th width="150px" class="text-center">Số lượng</th>
+                                                    <th width="150px" class="text-right">Đơn giá</th>
+                                                    <th width="150px" class="text-right">Thành tiền</th>
+                                                    <th width="150px" class="text-center">Mã vận đơn</th>
+                                                    <th width="150px" class="text-right">Ngày gửi</th>
+                                                    <th width="150px" class="text-center">Trạng thái</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <td class="text-left">Điện thoại 1</td>
+                                                    <td>2</td>
+                                                    <td class="text-right">10,000,000</td>
+                                                    <td class="text-right">20,000,000</td>
+                                                    <td>123456</td>
+                                                    <td class="text-right">9h00, 07-06-2018</td>
+                                                    <td>Đang gửi</td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td class="text-left">Điện thoại 1</td>
+                                                    <td>1</td>
+                                                    <td class="text-right">10,000,000</td>
+                                                    <td class="text-right">10,000,000</td>
+                                                    <td>123457</td>
+                                                    <td class="text-right">19h00, 07-06-2018</td>
+                                                    <td>Đang gửi</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>    
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table visible-xs">
+                            <tbody class="list-index-product">
+                                <tr class="bg-red" onclick="orderDetail()">
+                                    <td width="50px" class="text-center" style="vertical-align: middle;">
+                                        Chưa thanh toán
+                                    </td>
+                                    <td class='td-small-font' style="vertical-align: middle;">
+                                        <p><strong>Nguyễn Quang Học</strong></p>
+                                        <p><strong>01214.823.130</strong></p>
+                                        <p><strong>Đường C1, Q.Tân bình</strong></p>
+                                        <p><strong>Ghi chú: Giao hàng nhanh dùm</strong></p>
+                                        <p>Mã đơn hàng: 28131231</p>
+                                        <p>Ngày đặt hàng: 05-05-2018</p>
+                                        <p>Số sản phẩm: 10</p>
+                                        <p>Tổng tiền: 15,000,000</p>
+                                        <p>Trạng thái: Đang phát</p>
+                                    </td>
+                                </tr>
+                                <tr class="bg-red" onclick="orderDetail()">
+                                    <td width="50px" class="text-center" style="vertical-align: middle;">
+                                        Chưa thanh toán
+                                    </td>
+                                    <td class='td-small-font' style="vertical-align: middle;">
+                                        <p><strong>Nguyễn Quang Học</strong></p>
+                                        <p><strong>01214.823.130</strong></p>
+                                        <p><strong>Đường C1, Q.Tân bình</strong></p>
+                                        <p><strong>Ghi chú: Giao hàng nhanh dùm</strong></p>
+                                        <p>Mã đơn hàng: 28131231</p>
+                                        <p>Ngày đặt hàng: 05-05-2018</p>
+                                        <p>Số sản phẩm: 10</p>
+                                        <p>Tổng tiền: 15,000,000</p>
+                                        <p>Trạng thái: Đang phát</p>
+                                    </td>
+                                </tr>
+                                <tr class="bg-red" onclick="orderDetail()">
+                                    <td width="50px" class="text-center" style="vertical-align: middle;">
+                                        Chưa thanh toán
+                                    </td>
+                                    <td class='td-small-font' style="vertical-align: middle;">
+                                        <p><strong>Nguyễn Quang Học</strong></p>
+                                        <p><strong>01214.823.130</strong></p>
+                                        <p><strong>Đường C1, Q.Tân bình</strong></p>
+                                        <p><strong>Ghi chú: Giao hàng nhanh dùm</strong></p>
+                                        <p>Mã đơn hàng: 28131231</p>
+                                        <p>Ngày đặt hàng: 05-05-2018</p>
+                                        <p>Số sản phẩm: 10</p>
+                                        <p>Tổng tiền: 15,000,000</p>
+                                        <p>Trạng thái: Đang phát</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page navigation" class="pull-right">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" tabindex="" role="dialog" id="orderDetail">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-vionli text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1">
+                            <img src="icon/remove.png" width="18px">
+                        </button>
+                        <span class="text-white">
+                            Chi tiết đơn hàng
+                        </span>
+                    </div>
+                    <div class="modal-body pd-0">
+                        <table class="table">
+                            <tbody class="">
+                                <tr data-toggle='modal' data-target='#orderDetail'>
+                                    <td class='td-small-font' style="vertical-align: middle;">
+                                        <p>Sản phẩm: AAA</p>
+                                        <p>Số lượng: 2</p>
+                                        <p>Đơn giá: 10000</p>
+                                        <p>Thành tiền: 20000</p>
+                                        <p>Mã vận đơn: 3213123</p>
+                                        <p>Ngày gửi: 05-05-2018</p>
+                                    </td>
+                                    <td width="50px" class="bg-dark text-center" style="vertical-align: middle;">
+                                        Đang phát
+                                    </td>
+                                </tr>
+                                <tr data-toggle='modal' data-target='#orderDetail'>
+                                    <td class='td-small-font' style="vertical-align: middle;">
+                                        <p>Sản phẩm: AAA</p>
+                                        <p>Số lượng: 2</p>
+                                        <p>Đơn giá: 10000</p>
+                                        <p>Thành tiền: 20000</p>
+                                        <p>Mã vận đơn: 3213123</p>
+                                        <p>Ngày gửi: 05-05-2018</p>
+                                    </td>
+                                    <td width="50px" class="bg-dark text-center" style="vertical-align: middle;">
+                                        Chưa phát
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/ubislider.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+    <script type="text/javascript">
+        $("#listOrder .order").click(function(){
+            $("#listOrder .order:nth-child(even)").hide();
+            var index = $(this).index() + 1;
+            console.log(index);
+            if (index % 2 != 0) {
+                $($("#listOrder .order")[index]).show();
+            }
+        });
+        function orderDetail() {
+            $("#orderDetail").modal();
+        }
+        $(document).ready(function(){
+            $('#slider').ubislider({
+                arrowsToggle: true,
+                type: 'ecommerce',
+                hideArrows: true,
+                autoSlideOnLastClick: true,
+                modalOnClick: true,
+                onTopImageChange: function(){
+                    // $('#imageSlider img').elevateZoom();
+                }
+            });
+            $('#slider-mobile').ubislider({
+                arrowsToggle: true,
+                type: 'ecommerce',
+                hideArrows: true,
+                autoSlideOnLastClick: true,
+                modalOnClick: true,
+                onTopImageChange: function(){
+                    // $('#imageSlider img').elevateZoom();
+                }
+            });
+
+            jQuery('#choseCategory').select2({
+                placeholder: 'Select a category',
+                width: "100%",
+                data: [
+                    { id: 1, text: 'Danh mục 1' },
+                    { id: 2, text: 'Danh mục 2' },
+                ]
+            });
+
+            $(".ubislider-inner > li").click(function(e) {
+                $(".ubislider-inner > li").removeClass('active');
+                $(this).addClass('active');
+            })
+            $(".search_show").click(function () {
+                $(".search_show").addClass("hidden");
+                $(".search_show").removeClass("visible-xs-inline");
+                $(".search_form").removeClass("hidden-xs");
+            })
+        });
+    </script>
+
+</body>
+
+</html>     

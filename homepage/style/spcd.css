@@ -1,0 +1,233 @@
+body, html {
+    background-color: #f5f5f5;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+.menu-categories-icon {
+    width: 100%;
+    height: 100%;
+}
+.menu-categories-icon .list-2-categories {
+    width: 100%;
+    position: relative;
+}
+.menu-categories-icon-swiper-slide {
+    text-align: center;
+    min-height: 80px;
+    background: #fff;
+}
+.list-2-categories p {
+    min-height: 40px;
+    line-height: 20px;
+}
+.vionli-categories {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.icon-category-2 {
+    width: 100%;
+    min-height: 150px;
+    background: #ffffff;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 3px;
+}
+.icon-category-2 .icon-name {
+    min-height: 30px;
+    white-space: normal;
+}
+.list-2-categories-b {
+    width: 110px;
+    display: inline-block;
+}
+.input-group:hover > span.input-group-addon {
+    background: #7b7878;
+    color: #ffffff;
+    border: unset;
+    border-left: none;
+    box-shadow: unset;
+}
+
+.product-title, .price-product {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.input-group-focus > .input-group-addon {
+    background: #7b7878;
+    color: #ffffff;
+    border: unset;
+    border-left: none;
+    box-shadow: unset;
+}
+
+.form-control:focus {
+    box-shadow: unset;
+    border: unset;
+    transition: unset;
+    outline: none;
+    border: solid 1px #d1d1d1;
+}
+
+.product {
+    background: #fff;
+    float: left;
+    border: unset;
+    border-right: solid 0.1px #d1d1d1;
+    border-top: solid 0.1px #d1d1d1;
+    padding: 10px;
+    display: none;
+    /*padding-top: 5px;*/
+}
+
+.product-swiper-container, .best-product-swiper-container, .seen-product-swiper-container {
+    text-align: left;
+}
+
+.product-swiper-container .swiper-slide, .best-product-swiper-container .swiper-slide, .seen-product-swiper-container .swiper-slide {
+    text-align: justify;
+}
+
+.input-group-addon {
+    border-radius: 0px 30px 30px 0px; width: 15%; border-left: unset; background: #fff;
+    font-size: 18px; 
+    color: #888888;
+}
+.input-group > .form-control {
+    box-shadow: unset;
+}
+
+.banner-swiper-pagination .swiper-pagination-bullet-active {
+    background: #666;
+}
+
+.menu-categories-icon > a {
+    text-decoration: none;
+}
+
+
+.icon-category > a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.btn-nhan-ban{
+    margin-top: 5px;
+    /*position: relative;*/
+    /*bottom: 0;*/
+}
+.seen-product {
+    padding: 0px;
+    margin: 0px;
+}
+.pd-15 {
+    padding: 15px;
+}
+
+.swiper-button-next {
+    background-color: rgba(0,0,0,0.4);
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    margin-top: 0px;
+    width: 50px;
+    top: 30%;
+    /*background-image: url('../icon/next.png');*/
+    background-size: 25px;
+    display: none;
+}
+.swiper-button-prev {
+    background-color: rgba(0,0,0,0.4);
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    margin-top: 0px;
+    width: 50px;
+    top: 30%;
+    /*background-image: url('../icon/prev.png');*/
+    background-size: 25px;
+    display: none
+}
+.swiper-button-disabled {
+    display: none !important;
+}
+
+#product-modal {
+    border: solid 1px #d2d2d2;
+    margin: auto;
+    padding: 10px 5px;
+    width: 200px;
+}
+
+@media (min-width: 1025px) {
+    .product {
+        border: unset;
+    }
+    .product > .btn-nhan-ban {
+        display: none
+    }
+    .product:hover > .btn-nhan-ban {
+        display: block
+    }
+    .product:hover > .height-button-tmp {
+        display: none
+    }
+    .height-button-tmp {
+        height: 39px;
+        display: block;
+    }
+    .swiper-container:hover > .swiper-button-next {
+        display: block;
+    }
+    .swiper-container:hover > .swiper-button-prev {
+        display: block;
+    }
+    
+    .icon-category:hover {
+        border: solid 1px #d2d2d2;
+        cursor: pointer;
+    }
+    .button-vionli:hover {
+        font-weight: bold;
+        color: #fff;
+    }
+    .product:hover, .seen-product:hover {
+        cursor: pointer;
+        /*border: solid 0.1px grey;*/
+        box-shadow: 0px 1px 1px 1px;
+    }
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-container > div.product {
+        margin: 2px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 467px) {
+    .container {
+        margin: 0px;
+        padding: 0px;
+    }
+    .product {
+        position: relative;
+    }
+}
+
+

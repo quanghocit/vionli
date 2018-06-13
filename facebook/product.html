@@ -1,0 +1,110 @@
+<section class="section light-gray-bg clearfix">
+		<!-- List product -->
+		<div class="col-xs-6 col-sm-3 col-md-2 masonry-grid-item padding-5">
+			<div class="listing-item white-bg bordered mb-20 padding-10">
+				<div class="clearfix"></div>
+				<div class="product-info" data-toggle="modal" data-target="#detailProduct" onclick="getSwiper()">
+                    <div class="product-img">
+                        <img src="images/product/test3.jpeg">
+                    </div>
+                    <div class="title-product mg-top-5">
+                        <span class="name">Điện thoại iPhone X</span>
+                    </div>
+                </div>
+				<div class="clearfix"></div>
+				<h5 class="clearfix text-center text-danger-vionli">15.000.000 VNĐ</h5>
+				<div class="elements-list clearfix text-center">
+					<a class="btn btn-sm btn-default-transparent" style="">
+						Chia sẻ
+					</a>
+					<a class="btn btn-sm btn-primary btn-add-vionli btn-animated" style="">
+						Thêm
+						<i class="fa fa-shopping-cart"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Detail Product -->
+		<div id="detailProduct" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-full">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myLargeModalLabel">
+							<span>Điện thoại iPhone X - 128GB</span>
+						</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-4 col-md-3">
+								<div class="product-image padding-5">
+									<img id='imageProduct' src="images/product/phone1.png" width="100%">
+								</div>
+								<div class="product-thumbnail">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="tn-product swiper-slide active">
+												<img src="images/product/phone1.png" width="100%">
+											</div>
+											<div class="tn-product swiper-slide">
+												<img src="images/product/phone2.png" width="100%">
+											</div>
+											<div class="tn-product swiper-slide">
+												<img src="images/product/phone3.png" width="100%">
+											</div>
+											<div class="tn-product swiper-slide">
+												<img src="images/product/phone4.png" width="100%">
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-8 col-md-9">
+								<h3>Miêu tả sơ bộ</h3>
+								<!-- <div class="loading">
+									<div class="animated-background" style="height: 30px"></div>
+									<br />
+									<div class="animated-background" style="height: 30px"></div>
+									<br />
+									<div class="animated-background" style="height: 30px"></div>
+								</div> -->
+								<hr />
+								<div class="row">
+									<div class="form-inline">
+										<div class="col-sm-3 text-left">
+											<a class="btn btn-primary">
+												<i class="fa fa-facebook"></i>
+												<span class="hidden-xs">Chia sẻ</span>
+											</a>
+										</div>
+										<div class="col-sm-9 text-right">
+											<input type="number" class="form-control max-width-150" placeholder="Số lượng">
+											<button type="button" class="btn btn-danger btn-danger-vionli" data-dismiss="modal">
+												Thêm vào giỏ hàng
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pv-30">
+							<div class="row">
+								<div class="col-xs-12">
+									<ul class="nav nav-tabs style-4" role="tablist">
+										<li class="active">
+											<a href="#h2tab2" role="tab" data-toggle="tab" style="background-color: #dedada; border: none; color: #000000;">Miêu tả chi tiết</a>
+										</li>
+									</ul>
+									<div class="tab-content padding-top-clear padding-bottom-clear">
+										<div class="tab-pane fade in active" id="h2tab2">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>

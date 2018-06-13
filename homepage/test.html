@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vionli - Nơi chia sẻ cơ hội kinh doanh</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+	<div id="btn">dasdasdas</div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        jQuery.fn.extend({
+            animateCss: function(animationName, callback) {
+                var animationEnd = (function(el) {
+                    var animations = {
+                        animation: 'animationend',
+                        OAnimation: 'oAnimationEnd',
+                        MozAnimation: 'mozAnimationEnd',
+                        WebkitAnimation: 'webkitAnimationEnd',
+                    };
+
+                    for (var t in animations) {
+                        if (el.style[t] !== undefined) {
+                            return animations[t];
+                        }
+                    }
+                })(document.createElement('div'));
+
+                this.addClass(animationName + ' animated').one(animationEnd, function() {
+                    jQuery(this).removeClass(animationName + ' animated');
+
+                    if (typeof callback === 'function') callback();
+                    });
+
+                    return this;
+                },
+        });
+
+        jQuery("#btn").animateCss('fadeOutLeft');
+    </script>
+
+</body>
+
+</html> 

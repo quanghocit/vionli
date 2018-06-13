@@ -1,0 +1,50 @@
+a.remove i {
+    font-size: 20px;
+    text-decoration: none;
+    color: #444444;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.ubislider-image-container {
+	background-color: unset;
+	width: unset;
+	border: unset;
+}
+.ubislider.ecommerce{
+	width: unset;
+}
+.ubislider.ecommerce .ubislider-inner li {
+	border: unset;
+}
+.ubislider.ecommerce .ubislider-inner li.active {
+	border: solid 1px #d1d1d166;	
+}
+.border {
+	border: solid 1px #d1d1d1;
+}
+
+.border:hover {
+	border: solid 1px #d1d1d1;
+	box-shadow: unset;	
+}
+
+.dropdown-filter {
+	/*width: 800px;*/
+	padding: 5px;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+	.border-xs {
+		border: solid 1px #d1d1d1;	
+	}
+}

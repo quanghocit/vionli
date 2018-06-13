@@ -1,0 +1,118 @@
+tr > td {
+	border: unset !important;
+}
+.table-responsive {
+	border: unset;
+}
+.text-danger {
+	color: #ee1e1a;
+}
+.product-group {
+	margin: 0;
+	border: solid 1px #d1d1d1;
+	background-color: #ffffff;
+	border-radius: 10px;
+	border: solid 1px #d1d1d166;
+	padding-top: 15px;
+}
+.ubislider-image-container {
+	background-color: unset;
+	width: unset;
+	border: unset;
+}
+.ubislider.ecommerce{
+	width: unset;
+}
+.ubislider.ecommerce .ubislider-inner li {
+	border: unset;
+}
+.ubislider.ecommerce .ubislider-inner li.active {
+	border: solid 1px #d1d1d166;	
+}
+.breadcrumb>li+li:before {
+	font-family: FontAwesome;
+	content: "\f105"
+}
+.product:hover {
+	/*border: unset !important;*/
+	box-shadow: none !important;
+}
+.product {
+	border: solid 1px #d1d1d1;
+	padding: 10px;
+}
+.form-group-1 {
+	margin-top: 50px;
+}
+.form-group-2 {
+	margin-top: 50px;
+}
+.modal-body > .close {
+	z-index: 3000;
+	position: relative;
+}
+.btn-nhan-ban {
+	width: 50%;
+}
+
+.nav-tabs > li > a {
+	background-color: #ffffff;
+	text-align: center;
+	border:unset;
+	color: #333;
+	box-shadow: unset;
+	margin: 0px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border: unset;
+	box-shadow: unset;
+	border-radius: unset;
+	border-bottom: solid 2px #337ab7;
+	background-color: #ffffff !important;
+	color: #337ab7;
+}
+.fixed-bottom {
+	position: fixed;
+	z-index: 99;
+	bottom: 0;
+	padding: 5px;
+	width: 100%;
+	border-top: solid 1px #d1d1d1;
+	background-color: #ffffff;
+}
+.fixed-bottom .form-group {
+	margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+	body, html {
+		min-height: 100%;
+		position: relative;
+		background-color: #ffffff;
+	}
+	.img-left {
+		width: 25%;
+	}
+	.img-info {
+		width: 63%;
+		margin-right: 10px;
+	}
+	.col-sm-5 {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.btn-nhan-ban {
+		width: 100%;
+	}
+	.form-group-1 {
+		margin-top: 0px;
+	}
+	.form-group-2 {
+		margin-top: 30px;
+	}
+	.product-group {
+		border-radius: 0px;
+	}
+	.ubislider-image-container {
+		margin-top: 0px;
+	}
+}
