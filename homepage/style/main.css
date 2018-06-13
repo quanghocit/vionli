@@ -647,6 +647,9 @@ ul.menu-second {
         color: white;
         border: solid 1px #fff;   
     }
+    .nav.nav-tabs > li:first-child > a {
+        border-top-left-radius: 0px;
+    }
     .listFanpage > table > tbody > tr > td > img {
         width: 50px;
     }
