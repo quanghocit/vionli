@@ -43,6 +43,9 @@ html, body {
 .nav-tabs.nav-justified>.active>a:hover {
     border-color: unset;
 }
+.btn-white {
+    background-color: #ffffff;
+}
 .btn-white-trans {
     background-color: #ffffff;
     border: solid 1px #d1d1d1 !important;
