@@ -650,6 +650,12 @@ ul.menu-second {
     .nav.nav-tabs > li:first-child > a {
         border-top-left-radius: 0px;
     }
+    .nav.nav-tabs > li:last-child > a {
+        border-top-right-radius: 0px;
+    }
+    ul.nav-tabs {
+        border-radius: 0px;
+    }
     .listFanpage > table > tbody > tr > td > img {
         width: 50px;
     }
