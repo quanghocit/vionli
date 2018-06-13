@@ -207,14 +207,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="spcd.html">
                             <!-- <i class="fa fa-list fa-fw fa-2x"></i> -->
                             <img src="icon/product.png" height="50px">
                             <p class="margin-0">Sản phẩm</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="orders.html">
                             <!-- <i class="fa fa-shopping-cart fa-fw fa-2x"></i> -->
                             <img src="icon/mua-hang.png" height="50px">
                             <p class="margin-0">Đơn hàng</p>
@@ -479,17 +479,17 @@
                             </div>
                         </div>
                         <div class="modal fade" tabindex="" role="dialog" id="modal-product-receive">
-                            <div class="modal-dialog modal-lg" role="document" style="width: 90%;">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header bg-vionli text-center">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1">
+                                            <img src="icon/remove.png" width="18px">
                                         </button>
                                         <span class="text-white">
-                                            Chia sẻ sản phẩm cho cộng tác viên
+                                            Dành cho cộng tác viên
                                         </span>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body pd-5">
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-sm-3">
@@ -515,53 +515,55 @@
                                                     <div class="alert alert-danger" role="alert">
                                                         Chú ý: Chức năng chia sẻ sản phẩm hiển thị áp dụng cho các nhà cung cấp ở Tp. Hồ Chí Minh
                                                     </div>
-                                                    <form class="col-sm-8 col-md-4 pd-0">
-                                                        <div class="form-group">
-                                                            <label for="commission">Hoa hồng NCC chia sẻ</label>
-                                                            <input type="number" class="form-control" id="commission" placeholder="Hoa hồng" oninput="calCommission()">
+                                                    <div class="row">
+                                                        <form class="col-sm-8 col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="commission">Hoa hồng NCC chia sẻ</label>
+                                                                <input type="number" class="form-control" id="commission" placeholder="Hoa hồng" oninput="calCommission()">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="tip">Phí dịch vụ 30%</label>
+                                                                <input type="text" class="form-control" id="tip" placeholder="0 (VND)" readonly>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="tip-ctv">Hoa hồng CTV nhận được</label>
+                                                                <input type="text" class="form-control text-danger" id="tip-ctv" placeholder="0 (VND)" readonly>
+                                                            </div>
+                                                        </form>
+                                                        <div class="col-sm-4 col-md-8">
+                                                            <div class="form-group">
+                                                                <label for="tip-ctv">Chọn danh mục hiển thị sản phẩm</label>
+                                                                <div class="clearfix"></div>
+                                                                <select id="choseCategory" class="form-control">
+                                                                </select>
+                                                            </div>
+                                                            <span class="note">
+                                                                <strong>Ghi chú</strong>
+                                                                <p>
+                                                                    -
+                                                                    <u>Giá bán</u> là giá đã bao gồm phí vận chuyển toàn quốc
+                                                                </p>
+                                                                <p>
+                                                                    -
+                                                                    <u>Giá bán</u> là giá đã bao gồm phí vận chuyển toàn quốc
+                                                                </p>
+                                                                <p>
+                                                                    -
+                                                                    <u>Hoa hồng NCC chia sẻ</u> là số tiền nhà cung cấp sẽ cho đi khi
+                                                                    một đơn hàng được giao thành công từ hệ thống Vionli
+                                                                </p>
+                                                                <p>
+                                                                    -
+                                                                    <u>Phí dịch vụ 30%</u> là số tiền mà Vionli sẽ nhận được trên tổng
+                                                                    mức Hoa hồng NCC chia sẻ
+                                                                </p>
+                                                                <p>
+                                                                    -
+                                                                    <u>Hoa hồng CTV nhận được</u> là số tiền cộng tác viên sẽ nhận được
+                                                                    khi bán được một đơn hàng thành công
+                                                                </p>
+                                                            </span>
                                                         </div>
-                                                        <div class="form-group">
-                                                            <label for="tip">Phí dịch vụ 30%</label>
-                                                            <input type="text" class="form-control" id="tip" placeholder="0 (VND)" readonly>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="tip-ctv">Hoa hồng CTV nhận được</label>
-                                                            <input type="text" class="form-control text-danger" id="tip-ctv" placeholder="0 (VND)" readonly>
-                                                        </div>
-                                                    </form>
-                                                    <div class="col-sm-4 col-md-8">
-                                                        <div class="form-group">
-                                                            <label for="tip-ctv">Chọn danh mục hiển thị sản phẩm</label>
-                                                            <div class="clearfix"></div>
-                                                            <select id="choseCategory" class="form-control">
-                                                            </select>
-                                                        </div>
-                                                        <span class="note">
-                                                            <strong>Ghi chú</strong>
-                                                            <p>
-                                                                -
-                                                                <u>Giá bán</u> là giá đã bao gồm phí vận chuyển toàn quốc
-                                                            </p>
-                                                            <p>
-                                                                -
-                                                                <u>Giá bán</u> là giá đã bao gồm phí vận chuyển toàn quốc
-                                                            </p>
-                                                            <p>
-                                                                -
-                                                                <u>Hoa hồng NCC chia sẻ</u> là số tiền nhà cung cấp sẽ cho đi khi
-                                                                một đơn hàng được giao thành công từ hệ thống Vionli
-                                                            </p>
-                                                            <p>
-                                                                -
-                                                                <u>Phí dịch vụ 30%</u> là số tiền mà Vionli sẽ nhận được trên tổng
-                                                                mức Hoa hồng NCC chia sẻ
-                                                            </p>
-                                                            <p>
-                                                                -
-                                                                <u>Hoa hồng CTV nhận được</u> là số tiền cộng tác viên sẽ nhận được
-                                                                khi bán được một đơn hàng thành công
-                                                            </p>
-                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
