@@ -152,7 +152,7 @@
         <div id="menuUser" style="background-color: #fff">
             <div class="container">
                 <ul class="nav nav-pills nav-justified vionli-menu bg-white">
-                    <li class="active">
+                    <li class="">
                         <a href="#">
                             <!-- <i class="fa fa-facebook-square fa-fw fa-2x"></i> -->
                             <img src="icon/fanpage.png" height="50px">
@@ -166,7 +166,7 @@
                             <p class="margin-0">Sản phẩm</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="orders.html">
                             <!-- <i class="fa fa-shopping-cart fa-fw fa-2x"></i> -->
                             <img src="icon/mua-hang.png" height="50px">
@@ -586,10 +586,11 @@
     <script src="js/ubislider.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
     <script type="text/javascript">
-        $("#listOrder .order").click(function(){
+        var listOrderContent;
+        $("#listOrder .order").click(function(e){
+            console.log(e);
             $("#listOrder .order:nth-child(even)").hide();
             var index = $(this).index() + 1;
-            console.log(index);
             if (index % 2 != 0) {
                 $($("#listOrder .order")[index]).show();
             }
