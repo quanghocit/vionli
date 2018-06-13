@@ -610,6 +610,10 @@ ul.menu-second {
     border-bottom: solid 4px #444444;
 }
 
+.btn-group button, .btn-group a {
+    color: #333;
+}
+
 @media screen and (min-width: 100px) {
     .product-img {
         height: 150px;
@@ -629,8 +633,9 @@ ul.menu-second {
     .border-xs {
         border: solid 1px #d1d1d1;  
     }
-    .btn-group button {
+    .btn-group button, .btn-group a {
         border-radius: unset;
+        font-size: 12px;
     }
     .btn-group .btn+.btn {
         margin-left: unset;
