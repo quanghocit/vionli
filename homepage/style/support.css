@@ -1,0 +1,101 @@
+ul.menu-support {
+
+}
+ul.menu-support > li {
+	text-decoration: none;
+	list-style: none;
+	line-height: 30px;
+	font-size: 14px;
+	padding-left: 10px
+}
+
+ul.menu-support > li.active {
+	color: white;
+	background-color: #444;
+}
+
+.support-content {
+	border-radius: 10px;
+}
+
+.support-header {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	min-height: 100px;
+	background-color: blue;
+	text-align: center;
+	padding: 10px;
+	color: #ffffff;
+}
+
+.pd-tb-5 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+ul.vionli-menu > li.min-width-50 {
+	min-width: 50px !important;
+}
+
+.support-body {
+	text-align: center;
+	background-color: #ffffff;
+	padding: 10px;
+	min-height: 200px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #444444;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    border: unset;
+    border-radius: unset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    height: 36px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border-width: 7px 7px 0 7px;
+	border-color: #fff transparent transparent transparent;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-width: 0 7px 7px 7px;
+	border-color: transparent transparent #fff transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #ffffff;
+	line-height: 36px;
+	padding-left: 18px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: #aaa8a8;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	top: 14px;
+	right: 15px;
+}
+
+@media screen and (max-width: 767px){
+	ul.vionli-menu > li.visible-xs {
+		display: inline-block !important;
+	}	
+	.pd-xs-0 {
+		padding: 0px;
+	}
+}
+
+
+
+ul.vionli-menu > li > a.icon {
+	height: 40px;
+	padding: 0px;
+	width: 40px;
+	margin-bottom: 0px;
+}
