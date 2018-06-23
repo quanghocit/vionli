@@ -1,110 +1,323 @@
-<section class="section light-gray-bg clearfix">
-		<!-- List product -->
-		<div class="col-xs-6 col-sm-3 col-md-2 masonry-grid-item padding-5">
-			<div class="listing-item white-bg bordered mb-20 padding-10">
-				<div class="clearfix"></div>
-				<div class="product-info" data-toggle="modal" data-target="#detailProduct" onclick="getSwiper()">
-                    <div class="product-img">
-                        <img src="images/product/test3.jpeg">
-                    </div>
-                    <div class="title-product mg-top-5">
-                        <span class="name">Điện thoại iPhone X</span>
-                    </div>
-                </div>
-				<div class="clearfix"></div>
-				<h5 class="clearfix text-center text-danger-vionli">15.000.000 VNĐ</h5>
-				<div class="elements-list clearfix text-center">
-					<a class="btn btn-sm btn-default-transparent" style="">
-						Chia sẻ
-					</a>
-					<a class="btn btn-sm btn-primary btn-add-vionli btn-animated" style="">
-						Thêm
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+	<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>The Project | Offcanvas Header Left</title>
+		<meta name="description" content="The Project a Bootstrap-based, Responsive HTML5 Template">
+		<meta name="author" content="htmlcoder.me">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+		<!-- Font Awesome CSS -->
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<!-- Fontello CSS -->
+		<link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="plugins/rs-plugin/css/settings.css" rel="stylesheet">
+		<link href="css/animations.css" rel="stylesheet">
+		<link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<!-- <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet"> -->
+		<!-- <link href="plugins/hover/hover-min.css" rel="stylesheet">		 -->
+		<link href="plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
+		
+		<!-- the project core CSS file -->
+		<link href="css/style.css" rel="stylesheet" >
+
+		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
+		<link href="css/skins/light_blue.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="Swiper/dist/css/swiper.min.css">
+
+		<!-- Custom css --> 
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/menu.css" rel="stylesheet">
+		<link href="css/product.css" rel="stylesheet">
+	</head>
+
+	<body class="no-trans">
+		<!-- <div class="header">
+			<div class="menu-top">
+				<div class="col-xs-2 text-left" data-toggle="offcanvas" data-target="#offcanvas">
+					<i class="fa fa-bars"></i>
+				</div>
+				<div class="col-xs-8">
+					<span>[Danh mục]</span>
+				</div>
+				<div class="col-xs-2 text-right">
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
+				<ul class="nav navbar-nav text-center">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="page-about.html">About</a></li>
+					<li><a href="page-services.html">Services</a></li>
+					<li><a href="portfolio-grid-2-3-col.html">Portfolio</a></li>
+					<li><a href="shop-listing-3col.html">Shop</a></li>
+					<li><a href="page-contact.html">Contact</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu Item With Submenu</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Second Level Item 1</a></li>
+							<li><a href="#">Second Level Item 2</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Second Level Item With Submenu</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Third Level Item 1</a></li>
+									<li><a href="#">Third Level Item 2</a></li>
+									<li><a href="#">Third Level Item 3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div> -->
+
+		<div class="">
+			<div class="menu-top	">
+				<div class="col-xs-2 text-left">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				<div class="col-xs-8">
+					<span>[Danh mục]</span>
+				</div>
+				<div class="col-xs-1 text-center">
+					<span>
 						<i class="fa fa-shopping-cart"></i>
-					</a>
+					</span>
+				</div>
+				<div class="col-xs-1 text-center">
+					<span>
+						<i class="fa fa-ellipsis-v"></i>
+					</span>
 				</div>
 			</div>
 		</div>
-		<!-- Modal Detail Product -->
-		<div id="detailProduct" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-full">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						<h4 class="modal-title" id="myLargeModalLabel">
-							<span>Điện thoại iPhone X - 128GB</span>
-						</h4>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-sm-4 col-md-3">
-								<div class="product-image padding-5">
-									<img id='imageProduct' src="images/product/phone1.png" width="100%">
-								</div>
-								<div class="product-thumbnail">
-									<div class="swiper-container">
-										<div class="swiper-wrapper">
-											<div class="tn-product swiper-slide active">
-												<img src="images/product/phone1.png" width="100%">
-											</div>
-											<div class="tn-product swiper-slide">
-												<img src="images/product/phone2.png" width="100%">
-											</div>
-											<div class="tn-product swiper-slide">
-												<img src="images/product/phone3.png" width="100%">
-											</div>
-											<div class="tn-product swiper-slide">
-												<img src="images/product/phone4.png" width="100%">
-											</div>
-										</div>
-										<div class="swiper-pagination"></div>
-									</div>
-								</div>
+
+		<div style="margin-bottom: 70px">
+	        <div class="container">
+	            <ol class="breadcrumb" style="margin: 7px">
+	                <li>
+	                    <a href="#">Home</a>
+	                </li>
+	                <li class="active">Data</li>
+	            </ol>
+	            <div class="row">
+	                <div class="col-sm-6">
+	                    <div class="owl-carousel content-slider-with-large-controls">
+							<div class="overlay-container overlay-visible">
+								<img src="images/product/phone1.png" alt="">
+								<a href="images/product/phone1.png" class="popup-img overlay-link" title="image title"><i class="icon-plus-1"></i></a>
 							</div>
-							<div class="col-sm-8 col-md-9">
-								<h3>Miêu tả sơ bộ</h3>
-								<!-- <div class="loading">
-									<div class="animated-background" style="height: 30px"></div>
-									<br />
-									<div class="animated-background" style="height: 30px"></div>
-									<br />
-									<div class="animated-background" style="height: 30px"></div>
-								</div> -->
-								<hr />
-								<div class="row">
-									<div class="form-inline">
-										<div class="col-sm-3 text-left">
-											<a class="btn btn-primary">
-												<i class="fa fa-facebook"></i>
-												<span class="hidden-xs">Chia sẻ</span>
-											</a>
-										</div>
-										<div class="col-sm-9 text-right">
-											<input type="number" class="form-control max-width-150" placeholder="Số lượng">
-											<button type="button" class="btn btn-danger btn-danger-vionli" data-dismiss="modal">
-												Thêm vào giỏ hàng
-											</button>
-										</div>
-									</div>
-								</div>
+							<div class="overlay-container overlay-visible">
+								<img src="images/product/phone2.png" alt="">
+								<a href="images/product/phone2.png" class="popup-img overlay-link" title="image title"><i class="icon-plus-1"></i></a>
 							</div>
 						</div>
-						<div class="pv-30">
-							<div class="row">
-								<div class="col-xs-12">
-									<ul class="nav nav-tabs style-4" role="tablist">
-										<li class="active">
-											<a href="#h2tab2" role="tab" data-toggle="tab" style="background-color: #dedada; border: none; color: #000000;">Miêu tả chi tiết</a>
-										</li>
-									</ul>
-									<div class="tab-content padding-top-clear padding-bottom-clear">
-										<div class="tab-pane fade in active" id="h2tab2">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	                </div>
+	                <div class="col-sm-6">
+	                    <h2>Điện thoại xịn</h2>
+	                    <div class="table-responsive">
+	                        <table class="table">
+	                            <tr>
+	                                <td>Mã sản phẩm</td>
+	                                <td>#FBGDK!1</td>
+	                            </tr>
+	                            <tr>
+	                                <td>Giá bán lẻ</td>
+	                                <td>300.000</td>
+	                            </tr>
+	                            <tr>
+	                                <td>Hoa hồng sau khi bán</td>
+	                                <td class="text-danger">30.000</td>
+	                            </tr>
+	                            <tr>
+	                                <td>Đơn vị giao hàng</td>
+	                                <td>Giaohangnhanh</td>
+	                            </tr>
+	                            <tr>
+	                                <td>Dự kiến thời gian giao hàng</td>
+	                                <td>2-3 ngày</td>
+	                            </tr>
+	                        </table>
+	                    </div>
+	                    <div class="row btn-cart hidden-xs">
+	                    	<div class="col-xs-3">
+	                    		<button class="btn btn-primary width-full">
+	                    			<i class="fa fa-comments-o"></i>
+	                    			<div class="clearfix"></div>
+	                            	<small>Chat ngay</small>
+	                        	</button>
+	                    	</div>
+	                    	<div class="col-xs-3">
+	                    		<button class="btn btn-primary width-full">
+	                            	<i class="fa fa-shopping-cart"></i>
+	                            	<div class="clearfix"></div>
+	                            	<small>Thêm</small>
+	                        	</button>
+	                    	</div>
+	                    	<div class="col-xs-6">
+	                    		<button class="btn btn-danger width-full">
+	                            	<span>Mua ngay</span>
+	                        	</button>
+	                    	</div>
+	                    </div>
+	                </div>
+	                <div class="clearfix"></div>
+	                <hr style="margin-top: 25px; margin-left: 15px; margin-right: 15px;">
+	                <div class="col-xs-12">
+	                    <p>Giá bán xe đã bao gồm thuế VAT, không bao gồm thuế trước bạ và chi phí làm giấy tờ, biển số</p>
+	                    <p>Khách hàng nhận xe và làm thủ tục giấy tờ tại đại lý chính hãng</p>
+	                    <p>Hàng đã nhận không được đổi trả (điều kiện đổi trả theo quy định của Honda Việt Nam)</p>
+	                    <p>Thông tin bảo hành: 3 năm / 30.000 km (Tùy điều kiện nào đến trước)</p>
+	                    <p>Đối với đơn hàng thanh toán trả sau (COD), sau 5 ngày nếu khách hàng không đến nhận xe và thanh toán tại Head/Showroom thì Đơn hàng sẽ tự động hủy</p>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="modal fade" id="modal-product" role="dialog" aria-labelledby="myModalLabel">
+	            <div class="modal-dialog" role="document">
+	                <div class="modal-content">
+	                    <div class="modal-header visible-xs" style="border-bottom: unset;">
+	                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 0.8">
+	                            <!-- <span aria-hidden="true">&times;</span> -->
+	                            <img src="icon/remove-black.png" width="18px">
+	                        </button>
+	                    </div>
+	                    <div class="modal-body">
+	                        <button type="button" class="close hidden-xs" data-dismiss="modal" aria-label="Close" style="opacity: 0.8">
+	                            <!-- <span aria-hidden="true">&times;</span> -->
+	                            <img src="icon/remove-black.png" width="18px">
+	                        </button>
+	                        <div class="row" style="background-color: #ffffff">
+	                            <div class="col-sm-7 col-sm-push-5 text-center">
+	                                <div class="form-group form-group-1">
+	                                    <label style="font-size: 16px; margin-bottom: 15px">Chọn danh mục lưu trữ sản phẩm</label>
+	                                    <select class="form-control" id="choseCategory"></select>                                    
+	                                </div>
+	                                <div class="form-group form-group-2">
+	                                    <button type="button" class="btn btn-primary bg-vionli box-shadow min-width-200">Hoàn tất Nhận bán</button>
+	                                </div>
+	                            </div>
+	                            <div class="col-sm-5 col-sm-pull-7" style="margin-bottom: 20px;">
+	                                <div class="product">
+	                                    <div class="product-info">
+	                                        <div class="product-img">
+	                                            <img src="images/product/phone1.png">
+	                                        </div>
+	                                        <div class="product-title mg-top-5">
+	                                            <span class="name">Điện thoại iPhone X - 128 GB Màu đỏ</span>
+	                                        </div>
+	                                        <div class="price-product">
+	                                            <span class="text-left">Giá bán</span>
+	                                            <span class="pull-right">300.000đ</span>
+	                                            <div class="clearfix"></div>
+	                                            <span class="text-left">Hoa hồng</span>
+	                                            <span class="text-danger pull-right">0 đ</span>
+	                                        </div>
+	                                        <div class="" style="height: 40px">
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="row btn-cart visible-xs fixed">
+        	<div class="col-xs-3">
+        		<button class="btn btn-primary width-full">
+        			<i class="fa fa-comments-o"></i>
+        			<div class="clearfix"></div>
+                	<small>Chat ngay</small>
+            	</button>
+        	</div>
+        	<div class="col-xs-4">
+        		<button class="btn btn-primary width-full">
+                	<i class="fa fa-shopping-cart"></i>
+                	<div class="clearfix"></div>
+                	<small>Thêm vào Giỏ hàng</small>
+            	</button>
+        	</div>
+        	<div class="col-xs-5">
+        		<button class="btn btn-danger width-full">
+                	<span style="font-size: 15px">Mua ngay</span>
+            	</button>
+        	</div>
+        </div>
+
+		<!-- JavaScript files placed at the end of the document so the pages load faster -->
+		<!-- ================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+		<!-- jQuery Revolution Slider  -->
+		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- Jasny Bootstrap  -->
+		<script type="text/javascript" src="plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		
+		<!-- Magnific Popup javascript -->
+		<script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+		
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="plugins/waypoints/jquery.waypoints.min.js"></script>
+
+		<!-- Count To javascript -->
+		<script type="text/javascript" src="plugins/jquery.countTo.js"></script>
+		
+		<!-- Parallax javascript -->
+		<script src="plugins/jquery.parallax-1.1.3.js"></script>
+
+		<!-- Contact form -->
+		<script src="plugins/jquery.validate.js"></script>
+
+		<!-- Owl carousel javascript -->
+		<script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+		
+		<!-- SmoothScroll javascript -->
+		<script type="text/javascript" src="plugins/jquery.browser.js"></script>
+		<script type="text/javascript" src="plugins/SmoothScroll.js"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="js/template.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+
+		<script type="text/javascript" src="Swiper/dist/js/swiper.min.js"></script>
+	</body>
+</html>

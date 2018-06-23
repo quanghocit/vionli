@@ -1,0 +1,48 @@
+.header {
+	border: unset;
+	background-color: unset;
+}
+.menu-top {
+    height: 40px;
+    text-align: center;
+    background: linear-gradient(to right, #62809f, #b481b2);
+    color: white;
+    border: solid 1px #fff;
+}
+.menu-top div {
+    line-height: 40px;
+    color: #fff;
+}
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0;
+}
+.width-full {
+	width: 100%;
+}
+.product {
+	border: solid 1px #d1d1d1;
+	padding: 5px;
+}
+.product button {
+	margin: 0;
+}
+.product * {
+	font-size: 14px;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+}
+.product-img img {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}

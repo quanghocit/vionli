@@ -1,0 +1,29 @@
+.menu-top {
+    
+}
+.btn-cart div {
+    padding: 0;
+}
+.btn-cart button {
+    border-radius: unset;
+    min-height: 45px;
+    padding: 0px;
+}
+.btn-cart button small {
+    font-size: 10px;
+} 
+.btn-cart.fixed {
+    position: fixed;
+    bottom: -10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.btn-vionli {
+    background: linear-gradient(to right, #62809f, #b481b2);
+    color: white;
+    border: solid 1px linear-gradient(to right, #62809f, #b481b2);
+}
+.width-50 {
+    width: 50px;
+}
