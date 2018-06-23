@@ -1043,10 +1043,9 @@
             var commission = jQuery("#commission").val();
             var tip = Number(commission * 0.3, 0);
             var tipCtv = commission - tip;
-            console.log(tipCtv);
             jQuery("#commission-1").html(tipCtv.toLocaleString() + " đ");
-            jQuery("#tip").val(tip.toLocaleString() + " đ");
-            jQuery("#tip-ctv").val(tipCtv.toLocaleString() + " đ");
+            jQuery("#tip").html(tip.toLocaleString() + " đ");
+            jQuery("#tip-ctv").html(tipCtv.toLocaleString() + " đ");
         }
 
         tippy('a', {
