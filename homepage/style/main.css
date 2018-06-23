@@ -466,7 +466,9 @@ h4 {
     /*display: table-cell;*/
     /*vertical-align: middle;*/
 }
-
+.mg-bt-50 {
+    margin-bottom: 50px;
+}
 .input-group-focus > .input-group-addon {
     background: #7b7878;
     color: #ffffff;
@@ -639,6 +641,18 @@ ul.menu-second {
     }
     .btn-group .btn+.btn {
         margin-left: unset;
+    }
+    .btn-fixed-bottom {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+    .btn-fixed-bottom button {
+        width: 90%;
+        margin: 5px;
     }
     .content {
         margin-left: 0px;
