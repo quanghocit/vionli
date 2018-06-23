@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+	<meta charset="utf-8">
+	<title>Vionli</title>
+	<meta name="description" content="Vionli">
+	<meta name="author" content="Vionli">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="images/vionli/icon.png">
+
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+	<link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<link href="plugins/rs-plugin/css/settings.css" rel="stylesheet">
+	<link href="css/animations.css" rel="stylesheet">
+	<link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+	<link href="plugins/hover/hover-min.css" rel="stylesheet">
+
+	<link href="css/style.css" rel="stylesheet" >
+
+	<link href="css/skins/light_blue.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="plugins/swiper/dist/css/swiper.min.css">
+
+	<link href="css/placeholder.css" rel="stylesheet" type="text/css">
+
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/checkout.css" rel="stylesheet">
+</head>
+
+<body class="no-trans">
+	<div class="menu-top">
+		<div class="col-xs-2 text-left">
+			<i class="fa fa-arrow-left"></i>
+		</div>
+		<div class="col-xs-8">
+			<span>[Danh mục]</span>
+		</div>
+		<div class="col-xs-1 text-center">
+			<span>
+				<i class="fa fa-shopping-cart"></i>
+			</span>
+		</div>
+	</div>
+
+	<section class="section light-gray-bg clearfix" id="checkout">
+		<div class="col-xs-12">
+			<div class="pull-left">
+				<h3>CỬA HÀNG ĐIỆN THOẠI</h3>
+				<p>Mã cửa hàng: NQH071193</p>
+			</div>
+			<!-- <div class="pull-right text-right">
+				<img src="images/vionli/logo-1024.png" width="150px;">
+				<p>Đảm bảo bởi Vionli</p>
+			</div> -->
+		</div>
+		<div class="clearfix"></div>
+		<div class="col-xs-12" style="">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="radio">
+						<label>
+							<input type="radio" name="infoCheck" ng-model="infoCheck" value="infoSave">
+							Tiếp tục với thông tin đã lưu
+						</label>
+					</div>
+					<div class="bordered padding-10">
+						<p><strong>Nguyễn Quang Học</strong></p>
+						<p>Điện thoại: 01214 823 130</p>
+						<p>Địa chỉ: 37/12 C1, P.13, Quận Tân Bình, Tp. HCM</p>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="infoCheck" ng-model="infoCheck" value="infoNew">
+							Hoặc nhập thông tin đặt hàng mới
+						</label>
+					</div>
+					<div>
+						<div class="form-group">
+							<input type="text" class="form-control" ng-model="userPay.name" placeholder="Họ và tên" required
+							ng-readonly="infoCheck === 'infoSave'">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" rows="2" ng-model="userPay.address" placeholder="Địa chỉ nhận hàng"
+							required ng-readonly="infoCheck === 'infoSave'"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" ng-model="userPay.phone" placeholder="Số điện thoại (bắt buộc)"
+							required ng-readonly="infoCheck === 'infoSave'">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" rows="4" ng-model="userPay.note" placeholder="Ghi chú"
+							ng-readonly="infoCheck === 'infoSave'"></textarea>
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" ng-checked="userPay.saveInfo">
+									Lưu thông tin cho lần mua tiếp theo
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="img">
+									<img src="images/product/phone1.png">
+								</td>
+								<td>
+									<p>Điện thoại Iphone 6s Plus 32Gb VN/A -  Hàng Chính Hãng - Vàng</p>
+									<p>
+										<small>Cung cấp bởi NGH</small>
+									</p>
+									<p class="text-danger-vionli">11.400.000 VNĐ</p>
+									<input class="form-control input-sm" type="number" placeholder="Số lượng" value="1" min="1">
+								</td>
+								<td class="text-right">
+									<i class="fa fa-remove fa-fw text-danger-vionli"></i>
+								</td>
+							</tr>
+							<tr>
+								<td class="img">
+									<img src="images/product/phone1.png">
+								</td>
+								<td>
+									<p>Điện thoại Iphone 6s Plus 32Gb VN/A -  Hàng Chính Hãng - Vàng</p>
+									<p>
+										<small>Cung cấp bởi NGH</small>
+									</p>
+									<p class="text-danger-vionli">11.400.000 VNĐ</p>
+									<input class="form-control input-sm" type="number" placeholder="Số lượng" value="1" min="1">
+								</td>
+								<td class="text-right">
+									<i class="fa fa-remove fa-fw text-danger-vionli"></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="text-center fixed">
+		<button type="button" class="btn btn-lg btn-danger-vionli btn-primary">
+			Đặt Hàng
+		</button>
+	</div>
+
+	<section class="section light-gray-bg clearfix hidden-xs">
+		<h4 class="text-center">Sau khi đặt hàng sẽ như thế nào ?</h4>
+		<div class="col-sm-3 text-center">
+			<span class="icon default-bg circle">1</span>
+			<p>Vionli sẽ gọi tới bạn để xác thực thông tin đặt hàng.</p>
+			
+		</div>
+		<div class="col-sm-3 text-center">
+			<span class="icon default-bg circle">2</span>
+			<p>Đóng gói sản phẩm và tiến hàng giao hàng trên toàn quốc.</p>
+		</div>
+		<div class="col-sm-3 text-center">
+			<span class="icon default-bg circle">3</span>
+			<p>Khi hàng tới nơi, nhân viên giao hàng sẽ gọi điện trước cho bạn và chạy tới địa chỉ bạn cung cấp dể giao hàng. Ban thanh toán tiền cho nhân viên giao hàng.</p>
+		</div>
+		<div class="col-sm-3 text-center">
+			<span class="icon default-bg circle">4</span>
+			<p>Bạn có thể khiếu nại các vấn đề qua số tổng đài dưới.</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="col-sm-3 text-center">
+			<img class="inline-block" src="images/vionli/afterPay1.png">
+		</div>
+		<div class="col-sm-3 text-center">
+			<img class="inline-block" src="images/vionli/afterPay2.png">
+		</div>
+		<div class="col-sm-3 text-center">
+			<img class="inline-block" src="images/vionli/afterPay3.png">
+		</div>
+		<div class="col-sm-3 text-center">
+			<img class="inline-block" src="images/vionli/afterPay4.png">
+		</div>
+		<div class="clearfix"></div>
+		<div class="alert alert-danger" role="alert">
+			<strong>Lưu ý:</strong> Vionli.com không bán hàng, Vionli là trung tâm giao dịch người bán, nhà cung cấp và khách hàng.
+		</div>
+		<div class="text-center">
+			<btn class="btn btn-lg btn-primary min-width-250">
+				Tiếp tục mua sắm
+			</btn>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Modernizr javascript -->
+	<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+	<!-- jQuery Revolution Slider  -->
+	<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<!-- Isotope javascript -->
+	<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+
+	<!-- Magnific Popup javascript -->
+	<script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	<!-- Appear javascript -->
+	<script type="text/javascript" src="plugins/waypoints/jquery.waypoints.min.js"></script>
+
+	<!-- Count To javascript -->
+	<!-- <script type="text/javascript" src="plugins/jquery.countTo.js"></script> -->
+
+	<!-- Parallax javascript -->
+	<!-- <script src="plugins/jquery.parallax-1.1.3.js"></script> -->
+
+	<!-- Contact form -->
+	<!-- <script src="plugins/jquery.validate.js"></script> -->
+
+	<!-- Background Video -->
+	<!-- <script src="plugins/vide/jquery.vide.js"></script> -->
+
+	<!-- Owl carousel javascript -->
+	<script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!-- SmoothScroll javascript -->
+	<!-- <script type="text/javascript" src="plugins/jquery.browser.js"></script> -->
+	<!-- <script type="text/javascript" src="plugins/SmoothScroll.js"></script> -->
+
+	<!-- Initialization of Plugins -->
+	<script type="text/javascript" src="js/template.js"></script>
+
+	<!-- Swiper JS -->
+	<script src="plugins/swiper/dist/js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper;
+        function getSwiper(argument) {
+            setTimeout(function(){
+                swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                });
+            },500)
+        }
+
+		$(".tn-product").click(function(){
+			$("#imageProduct").attr("src","");
+			$(".tn-product").removeClass("active");
+			$(this).addClass("active");
+		})
+	
+	</script>
+
+	<!-- Custom Scripts -->
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

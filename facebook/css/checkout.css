@@ -1,0 +1,35 @@
+td > p {
+    margin-bottom: 5px;
+}
+td.img {
+    width: 150px;
+}
+td > input {
+    max-width: 100px;
+}
+@media screen and (max-width: 767px) {
+    td.img {
+        width: 100px;
+    }
+    #checkout {
+         padding: 0;
+         margin-bottom: 70px;
+    }
+    td {
+        padding: 8px !important;
+    }
+    
+    .fixed {
+        position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .fixed button {
+        width: 100%;
+    }
+}
