@@ -648,6 +648,7 @@ ul.menu-second {
         width: 100%;
         margin: 0;
         padding: 0;
+        left: 0;
         background-color: #ffffff;
     }
     .btn-fixed-bottom button {
