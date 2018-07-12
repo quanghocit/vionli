@@ -5,8 +5,16 @@ html, body {
     margin: 0;
     padding: 0;
 }
+hr {
+    border-top: solid 1px #d1d1d1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 ::-webkit-scrollbar {
     display: none;
+}
+.modal-md {
+    width: 50%;
 }
 .ubislider-image-container {
     background-color: unset;

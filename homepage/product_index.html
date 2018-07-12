@@ -214,300 +214,105 @@
     <div class="container">
         <div class="content">
             <div class="btn-group" role="group" style="width: 100%; margin-bottom: 10px;">
-                <button type="button" class="btn btn-white btn-lg" style="width: 50%; border-right: solid 1px #d1d1d1">
+                <button type="button" class="btn btn-white btn-lg" style="width: 33%; border-right: solid 1px #d1d1d1">
                     <small>Đăng sản phẩm</small>
                 </button>
-                <button type="button" class="btn btn-white btn-lg" style="width: 50%;">
+                <button type="button" class="btn btn-white btn-lg" style="width: 34%; border-right: solid 1px #d1d1d1">
                     <small>Nhận bán</small>
                 </button>
+                <button type="button" class="btn btn-white btn-lg" style="width: 33%;">
+                    <small>Quản lý danh mục</small>
+                </button>
             </div>
-            <ul class="nav nav-tabs nav-justified width-full bg-white" role="tablist">
-                <li role="presentation" class="active">
-                    <a href="#yourProduct" aria-controls="yourProduct" role="tab" data-toggle="tab">Sản phẩm của bạn</a>
-                </li>
-                <li role="presentation">
-                    <a href="#recieveProduct" aria-controls="recieveProduct" role="tab" data-toggle="tab">Sản phẩm nhận bán</a>
-                </li>
-            </ul>
-            <div class="clearfix"></div>
-            <div class="tab-content">
-                <!-- Tab sản phẩm của bạn -->
-                <div role="tabpanel" class="tab-pane active" id="yourProduct">
-                    <div class="tab-filter bg-dark-444">
-                        <div class="form-inline pd-5">
-                            <div class="pull-left">
-                                <div class="form-group" style="margin-left: 5px;">
-                                    <div class="pretty p-icon visible-xs">
-                                        <input type="checkbox">
-                                        <div class="state bg-white">
-                                            <i class="icon fa fa-check text-primary" style="border-color: #fff"></i>
-                                            <label><span class="hidden-xs">Chọn tất cả</span></label>
+            <div class="" id="aboutProduct">
+                <ul class="nav nav-tabs nav-justified width-full bg-white" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#yourProduct" aria-controls="yourProduct" role="tab" data-toggle="tab">Sản phẩm của bạn</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#recieveProduct" aria-controls="recieveProduct" role="tab" data-toggle="tab">Sản phẩm nhận bán</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+                <div class="tab-content">
+                    <!-- Tab sản phẩm của bạn -->
+                    <div role="tabpanel" class="tab-pane active" id="yourProduct">
+                        <div class="tab-filter bg-dark-444">
+                            <div class="form-inline pd-5">
+                                <div class="pull-left">
+                                    <div class="form-group" style="margin-left: 5px;">
+                                        <div class="pretty p-icon visible-xs">
+                                            <input type="checkbox">
+                                            <div class="state bg-white">
+                                                <i class="icon fa fa-check text-primary" style="border-color: #fff"></i>
+                                                <label><span class="hidden-xs">Chọn tất cả</span></label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="pull-right">
-                                <div class="form-group hidden-xs search_form" style="width: 180px !important">
-                                    <div class="input-group text-center">
-                                        <span class="input-group-addon">
+                                <div class="pull-right">
+                                    <div class="form-group hidden-xs search_form" style="width: 180px !important">
+                                        <div class="input-group text-center">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                            </span>
+                                            <input type="search" name="search" class="form-control input-sm" placeholder="Tìm kiếm sản phẩm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group visible-xs-inline search_show" style="margin-left: 5px;">
+                                        <button class="btn btn-white-trans btn-sm" >
                                             <i class="fa fa-search"></i>
-                                        </span>
-                                        <input type="search" name="search" class="form-control input-sm" placeholder="Tìm kiếm sản phẩm">
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="form-group visible-xs-inline search_show" style="margin-left: 5px;">
-                                    <button class="btn btn-white-trans btn-sm" >
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </div>
 
-                                <div class="form-group" style="margin-left: 5px; margin-right: 5px">
-                                    <div class="dropdown">
-                                        <button class="btn btn-white-trans btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                            Lọc
-                                            <span class="caret"></span>
-                                        </button>
-                                        <div class="dropdown-menu pull-right dropdown-filter" aria-labelledby="dropdownMenu1">
-                                            <div class="">
-                                                <h5>Theo danh mục</h5>
-                                                <hr />
+                                    <div class="form-group" style="margin-left: 5px; margin-right: 5px">
+                                        <div class="dropdown">
+                                            <button class="btn btn-white-trans btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                Lọc
+                                                <span class="caret"></span>
+                                            </button>
+                                            <div class="dropdown-menu pull-right dropdown-filter" aria-labelledby="dropdownMenu1">
                                                 <div class="">
-                                                    <div class="pretty p-icon">
-                                                        <input type="checkbox">
-                                                        <div class="state">
-                                                            <i class="icon fa fa-check text-primary"></i>
-                                                            <label>Danh mục 1</label>
+                                                    <h5>Theo danh mục</h5>
+                                                    <hr />
+                                                    <div class="">
+                                                        <div class="pretty p-icon">
+                                                            <input type="checkbox">
+                                                            <div class="state">
+                                                                <i class="icon fa fa-check text-primary"></i>
+                                                                <label>Danh mục 1</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pretty p-icon">
+                                                            <input type="checkbox">
+                                                            <div class="state">
+                                                                <i class="icon fa fa-check text-primary"></i>
+                                                                <label>Danh mục 2</label>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="pretty p-icon">
-                                                        <input type="checkbox">
-                                                        <div class="state">
-                                                            <i class="icon fa fa-check text-primary"></i>
-                                                            <label>Danh mục 2</label>
-                                                        </div>
+                                                    <hr />
+                                                    <div class="">
+                                                        <button class="btn btn-default btn-sm width-full">Lọc</button>
                                                     </div>
                                                 </div>
-                                                <hr />
-                                                <div class="">
-                                                    <button class="btn btn-default btn-sm width-full">Lọc</button>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group" onclick="modalRemoved()">
-                                    <span class="text-white">
-                                        <i class="fa fa-trash-o fa-2x" ></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="bg-white pd-5" style="border-radius: 0px 0px 10px 10px">
-                        <table class="table hidden-xs">
-                            <thead>
-                                <tr>
-                                    <th width="50px" class="text-center">
-                                        <div class="pretty p-icon">
-                                            <input type="checkbox">
-                                            <div class="state">
-                                                <i class="icon fa fa-check text-primary"></i>
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </th>
-                                    <th width="70px" class="text-center">Ảnh</th>
-                                    <th width="400px">Tiêu đề</th>
-                                    <th width="80px" class="text-right">Giá bán</th>
-                                    <th width="100px" class="text-right">Giá chia sẻ</th>
-                                    <th class="text-right">Danh mục</th>
-                                    <th width="90px" class="text-center">Số lượng</th>
-                                    <th width="100px" class="text-center">Ẩn / hiện</th>
-                                    <th width="50px" class="text-center">Xóa</th>
-                                </tr>
-                            </thead>
-                            <tbody class="list-index-product">
-                                <tr>
-                                    <td class="text-center">
-                                        <div class="pretty p-icon">
-                                            <input type="checkbox">
-                                            <div class="state">
-                                                <i class="icon fa fa-check text-primary"></i>
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-center" data-toggle="modal" data-target="#modal-product">
-                                        <div class="td-img">
-                                            <img src="images/product/phone1.png">
-                                        </div>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="no-margin" data-toggle="modal" data-target="#modal-product">Iphone 6</p>
-                                        <div class="pull-left">
-                                            <small>Mã SP: 302832</small>
-                                        </div>
-                                        <div class="pull-right">
-                                            <small>Ngày đăng: 30/06/2018</small>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <button class="btn btn-success btn-sm min-width-150 hidden">Hủy chia sẻ</button>
-                                        <button class="btn btn-success btn-sm min-width-150" data-toggle="modal" data-target="#modal-product-receive">Chia sẻ sản phẩm</button>
-                                    </td>
-                                    <td class="text-right">
-                                        15.000.000
-                                    </td>
-                                    <td class="text-green text-right">
-                                        <span>N/A</span>
-                                    </td>
-                                    <td class="text-right">
-                                        Sản phẩm tổng hợp
-                                    </td>
-                                    <td class="text-center">
-                                        10
-                                    </td>
-                                    <td class="text-center">
-                                        <div class="pretty p-switch p-fill">
-                                            <input type="checkbox" />
-                                            <div class="state">
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-center">
-                                        <a class="remove">
-                                            <i class="fa fa-remove"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <div class="pretty p-icon">
-                                            <input type="checkbox">
-                                            <div class="state">
-                                                <i class="icon fa fa-check text-primary"></i>
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-center">
-                                        <div class="td-img">
-                                            <img src="images/product/phone1.png">
-                                        </div>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="no-margin">Iphone 6</p>
-                                        <div class="pull-left">
-                                            <small>Mã SP: 302832</small>
-                                        </div>
-                                        <div class="pull-right">
-                                            <small>Ngày đăng: 30/06/2018</small>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <button class="btn btn-success bold btn-sm min-width-150">Hủy chia sẻ</button>
-                                        <button class="btn btn-success btn-sm min-width-150 hidden" data-toggle="modal" data-target="#modal-product-receive">Chia sẻ sản phẩm</button>
-                                    </td>
-                                    <td class="text-right">
-                                        15.000.000
-                                    </td>
-                                    <td class="text-green text-right">
-                                        <span>15.000.000</span>
-                                    </td>
-                                    <td class="text-right">
-                                        Sản phẩm tổng hợp
-                                    </td>
-                                    <td class="text-center">
-                                        10
-                                    </td>
-                                    <td class="text-center">
-                                        <div class="pretty p-switch p-fill">
-                                            <input type="checkbox" />
-                                            <div class="state">
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-center">
-                                        <a class="remove">
-                                            <i class="fa fa-remove"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="visible-xs">
-                            <div class="border-bottom">
-                                <div class="col-xs-4 pd-0">
-                                    <div class="td-img mg-bot-5">
-                                        <img src="images/product/phone1.png">
-                                    </div>
-                                    <div class="mg-bot-5">
-                                        <button class="btn btn-primary btn-sm width-full" data-toggle="modal" data-target="#modal-product">
-                                            Xem chi tiết
-                                        </button>
-                                    </div>
-                                    <div class="mg-bot-5">
-                                        <button class="btn btn-success btn-sm width-full hidden">
-                                            Hủy chia sẻ
-                                        </button>
-                                        <button class="btn btn-success btn-sm width-full" data-toggle="modal" data-target="#modal-product-receive">
-                                            Chia sẻ
-                                        </button>
-                                    </div>
-                                    <div class="mg-bot-5 text-center">
-                                        <button class="btn btn-white-trans btn-sm width-full">Xóa</button>
-                                    </div>
-                                </div>
-                                <div class="col-xs-8 pd-hoz-5">
-                                    <p>
-                                        <b>Iphone 6 đen đỏ .... ...ds .dsad . dsadas dsadas</b>
-                                    </p>
-                                    <div class="clearfix">
-                                        <span class="pull-left">Mã SP:</span>
-                                        <span class="pull-right">302832</span>
-                                    </div>
-                                    <div class="clearfix">
-                                        <span class="pull-left">Ngày đăng:</span>
-                                        <span class="pull-right">30/06/2018</span>
-                                    </div>
-                                    <div class="clearfix">
-                                        <span class="pull-left">Giá bán</span>
-                                        <span class="pull-right">15.000.000</span>
-                                    </div>
-                                    <div class="clearfix">
-                                        <span class="pull-left">Giá chia sẽ</span>
-                                        <span class="pull-right">1.500.000</span>
-                                    </div>
-                                    <div class="clearfix">
-                                        <span class="pull-left">Danh mục</span>
-                                        <span class="pull-right max-width-150">Sản phẩm ông bà ngoại</span>
-                                    </div>
-                                    <div class="clearfix">
-                                        <span class="pull-left">Số lượng</span>
-                                        <span class="pull-right">50</span>
-                                    </div>
-                                    <div class="clearfix">
-                                        <div class="pull-right">
-                                            <span>Ẩn</span>
-                                            <div class="pretty p-switch p-fill">
-                                                <input type="checkbox" />
-                                                <div class="state">
-                                                    <label></label>
-                                                </div>
-                                            </div>
-                                            <span>Hiện</span>
-                                        </div>
+                                    <div class="form-group" onclick="modalRemoved()">
+                                        <span class="text-white">
+                                            <i class="fa fa-trash-o fa-2x" ></i>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                         </div>
-                        <!-- <table class="table visible-xs">
-                            <tbody class="list-index-product">
-                                <tr>
-                                    <td class="text-left">
-                                        <div class="pull-left" style="width: 5%">
+                        <div class="bg-white pd-5" style="border-radius: 0px 0px 10px 10px">
+                            <table class="table hidden-xs">
+                                <thead>
+                                    <tr>
+                                        <th width="50px" class="text-center">
                                             <div class="pretty p-icon">
                                                 <input type="checkbox">
                                                 <div class="state">
@@ -515,27 +320,516 @@
                                                     <label></label>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="pull-right" style="width: 90%">
-                                            <div class="pull-left" style="width: 24%" data-toggle="modal" data-target="#modal-product">
-                                                <div class="td-img">
-                                                    <img src="images/product/phone1.png">
+                                        </th>
+                                        <th width="70px" class="text-center">Ảnh</th>
+                                        <th width="400px">Tiêu đề</th>
+                                        <th width="80px" class="text-right">Giá bán</th>
+                                        <th width="100px" class="text-right">Giá chia sẻ</th>
+                                        <th class="text-right">Danh mục</th>
+                                        <th width="90px" class="text-center">Số lượng</th>
+                                        <th width="100px" class="text-center">Ẩn / hiện</th>
+                                        <th width="50px" class="text-center">Xóa</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list-index-product">
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="pretty p-icon">
+                                                <input type="checkbox">
+                                                <div class="state">
+                                                    <i class="icon fa fa-check text-primary"></i>
+                                                    <label></label>
                                                 </div>
                                             </div>
-                                            <div class="pull-right text-right"  style="width: 76%">
-                                                <p class="no-margin">Iphone 6 đen đỏ .... ...ds .dsad . dsadas dsadas</p>
-                                                
-                                                <div class="clearfix"></div>
-                                                <button class="btn btn-success btn-sm min-width-150 hidden">
-                                                    Hủy chia sẻ
-                                                </button>
-                                                <button class="btn btn-success btn-sm min-width-150" data-toggle="modal" data-target="#modal-product-receive">
-                                                    Chia sẻ sản phẩm
-                                                </button>
-                                                <div class="clearfix"></div>
+                                        </td>
+                                        <td class="text-center" data-toggle="modal" data-target="#modal-product">
+                                            <div class="td-img">
+                                                <img src="images/product/phone1.png">
+                                            </div>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="no-margin" data-toggle="modal" data-target="#modal-product">Iphone 6</p>
+                                            <div class="pull-left">
+                                                <small>Mã SP: 302832</small>
+                                            </div>
+                                            <div class="pull-right">
+                                                <small>Ngày đăng: 30/06/2018</small>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <button class="btn btn-success btn-sm min-width-150 hidden">Hủy chia sẻ</button>
+                                            <button class="btn btn-success btn-sm min-width-150" data-toggle="modal" data-target="#modal-product-receive">Chia sẻ sản phẩm</button>
+                                        </td>
+                                        <td class="text-right">
+                                            15.000.000
+                                        </td>
+                                        <td class="text-green text-right">
+                                            <span>N/A</span>
+                                        </td>
+                                        <td class="text-right">
+                                            Sản phẩm tổng hợp
+                                        </td>
+                                        <td class="text-center">
+                                            10
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="pretty p-switch p-fill">
+                                                <input type="checkbox" />
+                                                <div class="state">
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="remove">
+                                                <i class="fa fa-remove"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="pretty p-icon">
+                                                <input type="checkbox">
+                                                <div class="state">
+                                                    <i class="icon fa fa-check text-primary"></i>
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="td-img">
+                                                <img src="images/product/phone1.png">
+                                            </div>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="no-margin">Iphone 6</p>
+                                            <div class="pull-left">
+                                                <small>Mã SP: 302832</small>
+                                            </div>
+                                            <div class="pull-right">
+                                                <small>Ngày đăng: 30/06/2018</small>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <button class="btn btn-success bold btn-sm min-width-150">Hủy chia sẻ</button>
+                                            <button class="btn btn-success btn-sm min-width-150 hidden" data-toggle="modal" data-target="#modal-product-receive">Chia sẻ sản phẩm</button>
+                                        </td>
+                                        <td class="text-right">
+                                            15.000.000
+                                        </td>
+                                        <td class="text-green text-right">
+                                            <span>15.000.000</span>
+                                        </td>
+                                        <td class="text-right">
+                                            Sản phẩm tổng hợp
+                                        </td>
+                                        <td class="text-center">
+                                            10
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="pretty p-switch p-fill">
+                                                <input type="checkbox" />
+                                                <div class="state">
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="remove">
+                                                <i class="fa fa-remove"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="visible-xs">
+                                <div class="border-bottom">
+                                    <div class="col-xs-4 pd-0">
+                                        <div class="td-img mg-bot-5">
+                                            <img src="images/product/phone1.png">
+                                        </div>
+                                        <div class="mg-bot-5">
+                                            <button class="btn btn-primary btn-sm width-full" data-toggle="modal" data-target="#modal-product">
+                                                Xem chi tiết
+                                            </button>
+                                        </div>
+                                        <div class="mg-bot-5">
+                                            <button class="btn btn-success btn-sm width-full hidden">
+                                                Hủy chia sẻ
+                                            </button>
+                                            <button class="btn btn-success btn-sm width-full" data-toggle="modal" data-target="#modal-product-receive">
+                                                Chia sẻ
+                                            </button>
+                                        </div>
+                                        <div class="mg-bot-5 text-center">
+                                            <button class="btn btn-white-trans btn-sm width-full">Xóa</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8 pd-hoz-5">
+                                        <p>
+                                            <b>Iphone 6 đen đỏ .... ...ds .dsad . dsadas dsadas</b>
+                                        </p>
+                                        <div class="clearfix">
+                                            <span class="pull-left">Mã SP:</span>
+                                            <span class="pull-right">302832</span>
+                                        </div>
+                                        <div class="clearfix">
+                                            <span class="pull-left">Ngày đăng:</span>
+                                            <span class="pull-right">30/06/2018</span>
+                                        </div>
+                                        <div class="clearfix">
+                                            <span class="pull-left">Giá bán</span>
+                                            <span class="pull-right">15.000.000</span>
+                                        </div>
+                                        <div class="clearfix">
+                                            <span class="pull-left">Giá chia sẽ</span>
+                                            <span class="pull-right">1.500.000</span>
+                                        </div>
+                                        <div class="clearfix">
+                                            <span class="pull-left">Danh mục</span>
+                                            <span class="pull-right max-width-150">Sản phẩm ông bà ngoại</span>
+                                        </div>
+                                        <div class="clearfix">
+                                            <span class="pull-left">Số lượng</span>
+                                            <span class="pull-right">50</span>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="pull-right">
+                                                <span>Ẩn</span>
+                                                <div class="pretty p-switch p-fill">
+                                                    <input type="checkbox" />
+                                                    <div class="state">
+                                                        <label></label>
+                                                    </div>
+                                                </div>
+                                                <span>Hiện</span>
                                             </div>
                                         </div>
-                                        <div data-toggle="modal" data-target="#modal-product">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <!-- <table class="table visible-xs">
+                                <tbody class="list-index-product">
+                                    <tr>
+                                        <td class="text-left">
+                                            <div class="pull-left" style="width: 5%">
+                                                <div class="pretty p-icon">
+                                                    <input type="checkbox">
+                                                    <div class="state">
+                                                        <i class="icon fa fa-check text-primary"></i>
+                                                        <label></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pull-right" style="width: 90%">
+                                                <div class="pull-left" style="width: 24%" data-toggle="modal" data-target="#modal-product">
+                                                    <div class="td-img">
+                                                        <img src="images/product/phone1.png">
+                                                    </div>
+                                                </div>
+                                                <div class="pull-right text-right"  style="width: 76%">
+                                                    <p class="no-margin">Iphone 6 đen đỏ .... ...ds .dsad . dsadas dsadas</p>
+                                                    
+                                                    <div class="clearfix"></div>
+                                                    <button class="btn btn-success btn-sm min-width-150 hidden">
+                                                        Hủy chia sẻ
+                                                    </button>
+                                                    <button class="btn btn-success btn-sm min-width-150" data-toggle="modal" data-target="#modal-product-receive">
+                                                        Chia sẻ sản phẩm
+                                                    </button>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div data-toggle="modal" data-target="#modal-product">
+                                                <div class="clearfix" style="margin-bottom: 5px"></div>
+                                                <div class="pull-left">
+                                                    <span>Mã SP: 302832</span>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <span>302832</span>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="pull-left">
+                                                    <span>Ngày đăng:</span>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <span>30/06/2018</span>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="pull-left">
+                                                    <span>Giá bán</span>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <span>15.000.000</span>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="pull-left">
+                                                    <span>Giá chia sẻ</span>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <span class="text-green">1.000.000</span>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="pull-left">
+                                                    <span>Danh mục</span>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <span>Sản phẩm tổng hợp</span>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="pull-left">
+                                                    <span>Số lượng</span>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <span>10</span>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="pull-left">
+                                                <span>Ẩn / hiện</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="pretty p-switch p-fill">
+                                                    <input type="checkbox" />
+                                                    <div class="state">
+                                                        <label></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="text-center">
+                                                <button class="btn btn-white-trans min-width-100">Xóa</button>
+                                            </div>
+                                            <div class="clearfix" style="margin-bottom: 5px"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+                            <nav aria-label="Page navigation" class="pull-right">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="recieveProduct">
+                        <div class="tab-filter bg-dark-444">
+                            <div class="form-inline pd-5">
+                                <div class="pull-left">
+                                    <div class="form-group" style="margin-left: 5px;">
+                                        <div class="pretty p-icon visible-xs">
+                                            <input type="checkbox">
+                                            <div class="state bg-white">
+                                                <i class="icon fa fa-check text-primary" style="border-color: #fff"></i>
+                                                <label><span class="hidden-xs">Chọn tất cả</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pull-right">
+                                    <div class="form-group hidden-xs search_form" style="width: 180px !important">
+                                        <div class="input-group text-center">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                            </span>
+                                            <input type="search" name="search" class="form-control input-sm" placeholder="Tìm kiếm sản phẩm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group visible-xs-inline search_show" style="margin-left: 5px;">
+                                        <button class="btn btn-white-trans btn-sm" >
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="form-group" style="margin-left: 5px; margin-right: 5px">
+                                        <button class="btn btn-white-trans btn-sm">
+                                            <span>Lọc</span>
+                                        </button>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="text-white">
+                                            <i class="fa fa-trash-o fa-2x"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="bg-white pd-5" style="border-radius: 0px 0px 10px 10px">
+                            <table class="table hidden-xs">
+                                <thead>
+                                    <tr>
+                                        <th width="50px" class="text-center">
+                                            <div class="pretty p-icon">
+                                                <input type="checkbox">
+                                                <div class="state">
+                                                    <i class="icon fa fa-check text-primary"></i>
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th width="70px" class="text-center">Ảnh</th>
+                                        <th width="400px">Tiêu đề</th>
+                                        <th width="80px" class="text-right">Giá bán</th>
+                                        <th width="100px" class="text-right">Hoa hồng</th>
+                                        <th class="text-right">Danh mục</th>
+                                        <th width="90px" class="text-center">Số lượng</th>
+                                        <th width="100px" class="text-center">Ẩn / hiện</th>
+                                        <th width="50px" class="text-center">Xóa</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list-index-product">
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="pretty p-icon">
+                                                <input type="checkbox">
+                                                <div class="state">
+                                                    <i class="icon fa fa-check text-primary"></i>
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="td-img">
+                                                <img src="images/product/phone1.png">
+                                            </div>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="no-margin">Iphone 6</p>
+                                            <div class="pull-left">
+                                                <small>Mã SP: 302832</small>
+                                            </div>
+                                            <div class="pull-right">
+                                                <small>Ngày đăng: 30/06/2018</small>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </td>
+                                        <td class="text-right">
+                                            15.000.000
+                                        </td>
+                                        <td class="text-red text-right">
+                                            <span>1.000.000</span>
+                                        </td>
+                                        <td class="text-right">
+                                            Sản phẩm tổng hợp
+                                        </td>
+                                        <td class="text-center">
+                                            10
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="pretty p-switch p-fill">
+                                                <input type="checkbox" />
+                                                <div class="state">
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="remove">
+                                                <i class="fa fa-remove"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="pretty p-icon">
+                                                <input type="checkbox">
+                                                <div class="state">
+                                                    <i class="icon fa fa-check text-primary"></i>
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="td-img">
+                                                <img src="images/product/phone1.png">
+                                            </div>
+                                        </td>
+                                        <td class="text-left">
+                                            <p class="no-margin">Iphone 6</p>
+                                            <div class="pull-left">
+                                                <small>Mã SP: 302832</small>
+                                            </div>
+                                            <div class="pull-right">
+                                                <small>Ngày đăng: 30/06/2018</small>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </td>
+                                        <td class="text-right">
+                                            15.000.000
+                                        </td>
+                                        <td class="text-red text-right">
+                                            <span>15.000.000</span>
+                                        </td>
+                                        <td class="text-right">
+                                            Sản phẩm tổng hợp
+                                        </td>
+                                        <td class="text-center">
+                                            10
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="pretty p-switch p-fill">
+                                                <input type="checkbox" />
+                                                <div class="state">
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a class="remove">
+                                                <i class="fa fa-remove"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table visible-xs">
+                                <tbody class="list-index-product">
+                                    <tr>
+                                        <td class="text-left">
+                                            <div class="pull-left" style="width: 5%">
+                                                <div class="pretty p-icon">
+                                                    <input type="checkbox">
+                                                    <div class="state">
+                                                        <i class="icon fa fa-check text-primary"></i>
+                                                        <label></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pull-right" style="width: 90%">
+                                                <div class="pull-left" style="width: 24%">
+                                                    <div class="td-img">
+                                                        <img src="images/product/phone1.png">
+                                                    </div>
+                                                </div>
+                                                <div class="pull-right text-right"  style="width: 76%">
+                                                    <p class="no-margin">Iphone 6 đen đỏ .... ...ds .dsad . dsadas dsadas</p>
+                                                </div>
+                                            </div>
                                             <div class="clearfix" style="margin-bottom: 5px"></div>
                                             <div class="pull-left">
                                                 <span>Mã SP: 302832</span>
@@ -559,10 +853,10 @@
                                             </div>
                                             <div class="clearfix"></div>
                                             <div class="pull-left">
-                                                <span>Giá chia sẻ</span>
+                                                <span>Hoa hồng</span>
                                             </div>
                                             <div class="pull-right">
-                                                <span class="text-green">1.000.000</span>
+                                                <span class="text-red">1.000.000</span>
                                             </div>
                                             <div class="clearfix"></div>
                                             <div class="pull-left">
@@ -578,347 +872,58 @@
                                             <div class="pull-right">
                                                 <span>10</span>
                                             </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="pull-left">
-                                            <span>Ẩn / hiện</span>
-                                        </div>
-                                        <div class="pull-right">
-                                            <div class="pretty p-switch p-fill">
-                                                <input type="checkbox" />
-                                                <div class="state">
-                                                    <label></label>
+                                            <div class="clearfix"></div>
+                                            <div class="pull-left">
+                                                <span>Ẩn / hiện</span>
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="pretty p-switch p-fill">
+                                                    <input type="checkbox" />
+                                                    <div class="state">
+                                                        <label></label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="text-center">
-                                            <button class="btn btn-white-trans min-width-100">Xóa</button>
-                                        </div>
-                                        <div class="clearfix" style="margin-bottom: 5px"></div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table> -->
-                        <nav aria-label="Page navigation" class="pull-right">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">1</a>
-                                </li>
-                                <li>
-                                    <a href="#">2</a>
-                                </li>
-                                <li>
-                                    <a href="#">3</a>
-                                </li>
-                                <li>
-                                    <a href="#">4</a>
-                                </li>
-                                <li>
-                                    <a href="#">5</a>
-                                </li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="recieveProduct">
-                    <div class="tab-filter bg-dark-444">
-                        <div class="form-inline pd-5">
-                            <div class="pull-left">
-                                <div class="form-group" style="margin-left: 5px;">
-                                    <div class="pretty p-icon visible-xs">
-                                        <input type="checkbox">
-                                        <div class="state bg-white">
-                                            <i class="icon fa fa-check text-primary" style="border-color: #fff"></i>
-                                            <label><span class="hidden-xs">Chọn tất cả</span></label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pull-right">
-                                <div class="form-group hidden-xs search_form" style="width: 180px !important">
-                                    <div class="input-group text-center">
-                                        <span class="input-group-addon">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                        <input type="search" name="search" class="form-control input-sm" placeholder="Tìm kiếm sản phẩm">
-                                    </div>
-                                </div>
-                                <div class="form-group visible-xs-inline search_show" style="margin-left: 5px;">
-                                    <button class="btn btn-white-trans btn-sm" >
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </div>
-
-                                <div class="form-group" style="margin-left: 5px; margin-right: 5px">
-                                    <button class="btn btn-white-trans btn-sm">
-                                        <span>Lọc</span>
-                                    </button>
-                                </div>
-                                <div class="form-group">
-                                    <span class="text-white">
-                                        <i class="fa fa-trash-o fa-2x"></i>
-                                    </span>
-                                </div>
-                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="text-center">
+                                                <button class="btn btn-white-trans min-width-100">Xóa</button>
+                                            </div>
+                                            <div class="clearfix" style="margin-bottom: 5px"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation" class="pull-right">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                             <div class="clearfix"></div>
                         </div>
-                    </div>
-                    <div class="bg-white pd-5" style="border-radius: 0px 0px 10px 10px">
-                        <table class="table hidden-xs">
-                            <thead>
-                                <tr>
-                                    <th width="50px" class="text-center">
-                                        <div class="pretty p-icon">
-                                            <input type="checkbox">
-                                            <div class="state">
-                                                <i class="icon fa fa-check text-primary"></i>
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </th>
-                                    <th width="70px" class="text-center">Ảnh</th>
-                                    <th width="400px">Tiêu đề</th>
-                                    <th width="80px" class="text-right">Giá bán</th>
-                                    <th width="100px" class="text-right">Hoa hồng</th>
-                                    <th class="text-right">Danh mục</th>
-                                    <th width="90px" class="text-center">Số lượng</th>
-                                    <th width="100px" class="text-center">Ẩn / hiện</th>
-                                    <th width="50px" class="text-center">Xóa</th>
-                                </tr>
-                            </thead>
-                            <tbody class="list-index-product">
-                                <tr>
-                                    <td class="text-center">
-                                        <div class="pretty p-icon">
-                                            <input type="checkbox">
-                                            <div class="state">
-                                                <i class="icon fa fa-check text-primary"></i>
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-center">
-                                        <div class="td-img">
-                                            <img src="images/product/phone1.png">
-                                        </div>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="no-margin">Iphone 6</p>
-                                        <div class="pull-left">
-                                            <small>Mã SP: 302832</small>
-                                        </div>
-                                        <div class="pull-right">
-                                            <small>Ngày đăng: 30/06/2018</small>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </td>
-                                    <td class="text-right">
-                                        15.000.000
-                                    </td>
-                                    <td class="text-red text-right">
-                                        <span>1.000.000</span>
-                                    </td>
-                                    <td class="text-right">
-                                        Sản phẩm tổng hợp
-                                    </td>
-                                    <td class="text-center">
-                                        10
-                                    </td>
-                                    <td class="text-center">
-                                        <div class="pretty p-switch p-fill">
-                                            <input type="checkbox" />
-                                            <div class="state">
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-center">
-                                        <a class="remove">
-                                            <i class="fa fa-remove"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <div class="pretty p-icon">
-                                            <input type="checkbox">
-                                            <div class="state">
-                                                <i class="icon fa fa-check text-primary"></i>
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-center">
-                                        <div class="td-img">
-                                            <img src="images/product/phone1.png">
-                                        </div>
-                                    </td>
-                                    <td class="text-left">
-                                        <p class="no-margin">Iphone 6</p>
-                                        <div class="pull-left">
-                                            <small>Mã SP: 302832</small>
-                                        </div>
-                                        <div class="pull-right">
-                                            <small>Ngày đăng: 30/06/2018</small>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </td>
-                                    <td class="text-right">
-                                        15.000.000
-                                    </td>
-                                    <td class="text-red text-right">
-                                        <span>15.000.000</span>
-                                    </td>
-                                    <td class="text-right">
-                                        Sản phẩm tổng hợp
-                                    </td>
-                                    <td class="text-center">
-                                        10
-                                    </td>
-                                    <td class="text-center">
-                                        <div class="pretty p-switch p-fill">
-                                            <input type="checkbox" />
-                                            <div class="state">
-                                                <label></label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="text-center">
-                                        <a class="remove">
-                                            <i class="fa fa-remove"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table visible-xs">
-                            <tbody class="list-index-product">
-                                <tr>
-                                    <td class="text-left">
-                                        <div class="pull-left" style="width: 5%">
-                                            <div class="pretty p-icon">
-                                                <input type="checkbox">
-                                                <div class="state">
-                                                    <i class="icon fa fa-check text-primary"></i>
-                                                    <label></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pull-right" style="width: 90%">
-                                            <div class="pull-left" style="width: 24%">
-                                                <div class="td-img">
-                                                    <img src="images/product/phone1.png">
-                                                </div>
-                                            </div>
-                                            <div class="pull-right text-right"  style="width: 76%">
-                                                <p class="no-margin">Iphone 6 đen đỏ .... ...ds .dsad . dsadas dsadas</p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix" style="margin-bottom: 5px"></div>
-                                        <div class="pull-left">
-                                            <span>Mã SP: 302832</span>
-                                        </div>
-                                        <div class="pull-right">
-                                            <span>302832</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="pull-left">
-                                            <span>Ngày đăng:</span>
-                                        </div>
-                                        <div class="pull-right">
-                                            <span>30/06/2018</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="pull-left">
-                                            <span>Giá bán</span>
-                                        </div>
-                                        <div class="pull-right">
-                                            <span>15.000.000</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="pull-left">
-                                            <span>Hoa hồng</span>
-                                        </div>
-                                        <div class="pull-right">
-                                            <span class="text-red">1.000.000</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="pull-left">
-                                            <span>Danh mục</span>
-                                        </div>
-                                        <div class="pull-right">
-                                            <span>Sản phẩm tổng hợp</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="pull-left">
-                                            <span>Số lượng</span>
-                                        </div>
-                                        <div class="pull-right">
-                                            <span>10</span>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="pull-left">
-                                            <span>Ẩn / hiện</span>
-                                        </div>
-                                        <div class="pull-right">
-                                            <div class="pretty p-switch p-fill">
-                                                <input type="checkbox" />
-                                                <div class="state">
-                                                    <label></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="text-center">
-                                            <button class="btn btn-white-trans min-width-100">Xóa</button>
-                                        </div>
-                                        <div class="clearfix" style="margin-bottom: 5px"></div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <nav aria-label="Page navigation" class="pull-right">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">1</a>
-                                </li>
-                                <li>
-                                    <a href="#">2</a>
-                                </li>
-                                <li>
-                                    <a href="#">3</a>
-                                </li>
-                                <li>
-                                    <a href="#">4</a>
-                                </li>
-                                <li>
-                                    <a href="#">5</a>
-                                </li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>

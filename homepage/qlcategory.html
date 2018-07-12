@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vionli - Nơi chia sẻ cơ hội kinh doanh</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="Swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-default bg-vionli margin-0 nav-desktop">
+            <!-- Get container for device [desktop][mobile]-->
+            <ul class="nav navbar-nav navbar-left">
+                <li onmouseover="" onmouseout="" class="vionli dashboard active  parent level0">
+                    <a href="#store" class="v2-tp-ic active own-store width-100">
+                    </a>
+                    <div class="combox">
+                        <i class="fa fa-caret-up"></i>
+                    </div>
+                </li>
+                <li class="vionli public_product level0">
+                    <a href="#public_product" class="v2-tp-ic  ">
+                    </a>
+                </li>
+                <li class="vionli public_product level0">
+                    <a href="#public_product" class="v2-tp-ic  ">
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="vionli notification float-right dropdown level0">
+                    <a href="#vol_notice" class="v2-tp-ic vol_notification dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
+                    </a>
+                </li>
+                <ul class="dropdown-menu  dropdown-menu-right">
+                    <li>
+                        <div class="noti-header">
+                            <p>Thông báo</p>
+                            <small class="mark-noti-as-read pull-right">
+                                <a href="javascript:void(0)" class="marked-as-read">Đánh dấu đã đọc</a>
+                            </small>
+
+                        </div>
+
+                        <div class="noti-content" id="vendor-admin-notification-popup">
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">p _fb has placed a COD order 100000025 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2018-01-30 14:58:07</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">hocdeptrai _fb has placed a COD order 100000021_1 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2018-01-27 04:20:08</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">HUy _fb has placed a COD order 100000019_1 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2018-01-27 03:30:09</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">aaa _fb has placed a COD order 100000016 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2017-12-30 03:20:05</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">Cadeptrai _fb has placed a COD order 100000015 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2017-12-30 03:18:06</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="noti-items">
+                                <a href="javascript:void(0)">
+                                    <div class="icon-type">
+                                        <span class="icon new-order"></span>
+                                    </div>
+                                    <div class="noti-items-content">
+                                        <div class="title ">nguyenthanhtoan _fb has placed a COD order 100000014 for your shop with total 212121.0000</div>
+                                        <div class="time-block">
+                                            <i class="fa fa-clock-o"></i> 2017-12-30 03:12:07</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <style type="text/css">
+                                .navbar-nav>li>.dropdown-menu {
+                                    margin-top: 34px;
+                                }
+                            </style>
+                        </div>
+                        <div class="noti-bottom">
+                            <a href="https://dev.vionli.com/index.php/1456595524453177/notification/index/">Xem tất cả</a>
+                        </div>
+                    </li>
+                </ul>
+                <li class="vionli notification float-right dropdown level0">
+                    <a href="#vol_notice" class="v2-tp-ic vol_notification dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
+                    </a>
+                </li>
+                <li class="vionli share level0">
+                    <a href="#knowledge" class="v2-tp-ic">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="menuUser" style="background-color: #fff">
+            <div class="container">
+                <ul class="nav nav-pills nav-justified vionli-menu bg-white">
+                    <li class="active">
+                        <a href="#">
+                            <!-- <i class="fa fa-facebook-square fa-fw fa-2x"></i> -->
+                            <img src="icon/fanpage.png" height="50px">
+                            <p class="margin-0">Fanpage</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="spcd.html">
+                            <!-- <i class="fa fa-list fa-fw fa-2x"></i> -->
+                            <img src="icon/product.png" height="50px">
+                            <p class="margin-0">Sản phẩm</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <!-- <i class="fa fa-shopping-cart fa-fw fa-2x"></i> -->
+                            <img src="icon/mua-hang.png" height="50px">
+                            <p class="margin-0">Đơn hàng</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- <i class="fa fa-bar-chart fa-fw fa-2x"></i> -->
+                            <img src="icon/report.png" height="50px">
+                            <p class="margin-0">Thống kê</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- <i class="fa fa-money fa-fw fa-2x"></i> -->
+                            <img src="icon/loi-nhuan.png" height="50px">
+                            <p class="margin-0">Doanh thu</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- <i class="fa fa-cogs fa-fw fa-2x"></i> -->
+                            <img src="icon/setting.png" height="50px">
+                            <p class="margin-0">Cài dặt</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content row">
+            <div class="col-xs-12 pd-10 border bg-white" style="padding-top: 20px;">
+                <div class="text-right">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Tạo mới
+                    </button>
+                </div>
+                <table class="table">
+                    <thead>
+                        <th>STT</th>
+                        <th>Tên danh mục</th>
+                        <th>Mô tả</th>
+                        <th class="text-right">Thao tác</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Điện thoại</td>
+                            <td>Điện thoại</td>
+                            <td class="text-right">
+                                <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Sửa</button>
+                                <button class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>iPhone</td>
+                            <td>Điện thoại / iPhone</td>
+                            <td class="text-right">
+                                <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Sửa</button>
+                                <button class="btn btn-danger">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Thời trang</td>
+                            <td>Thời trang</td>
+                            <td class="text-right">
+                                <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Sửa</button>
+                                <button class="btn btn-danger">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-vionli text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1">
+                                    <img src="icon/remove.png" width="18px">
+                                </button>
+                                <h4 class="modal-title text-white" id="myModalLabel">Tạo danh mục</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <p class="control-label">Tên danh mục</p>
+                                            <div class="input-group">
+                                                <input type="text" id="name_sp" name="vionli_popup_product_name" class="form-control" placeholder="Tên danh mục" maxlength="20"
+                                                    minlength="5" required="true">
+                                                <span class="input-group-addon">20</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="control-label">Tùy chọn thuộc tính</p>
+                                            <select class="form-control">
+                                                <option value="">Danh mục cha</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <p class="control-label">Mô tả danh mục</p>
+                                            <textarea class="form-control" rows="5">Chưa có danh mục nào</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" style="border-radius: 5px; margin-right: 10px">Lưu</button>
+                                <button class="btn btn-default" style="border-radius: 5px;">Lưu và thêm mới</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-vionli text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1">
+                                    <img src="icon/remove.png" width="18px">
+                                </button>
+                                <h4 class="modal-title text-white" id="myModalLabel">Xóa danh mục</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <p class="text-justify">Xóa danh mục này và chuyển tất cả sản phẩm sang danh mục hiện có: </p>
+                                        <select class="form-control">
+                                            <option value="">Chọn danh mục</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4 text-center">
+                                        <button class="btn btn-warning" style="width: 150px">Di chuyển và Xóa</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <hr />
+                                    <div class="clearfix"></div>
+                                    <div class="col-sm-8">
+                                        <p class="text-justify">Bạn chắc chắn xóa danh mục này đồng thời xóa hết các sản phẩm thuộc danh mục này</p>
+                                    </div>
+                                    <div class="col-sm-4 text-center">
+                                        <button class="btn btn-danger" style="width: 150px">Xóa</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@2.4.1/dist/tippy.all.min.js"></script>
+    <script type="text/javascript" src="Swiper/dist/js/swiper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.9.2/basic/ckeditor.js"></script>
+
+    <script type="text/javascript">
+    </script>
+
+</body>
+
+</html> 
