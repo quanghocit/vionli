@@ -45,7 +45,7 @@
                     <a href="#vol_notice" class="v2-tp-ic vol_notification dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
                     </a>
                 </li>
-                <ul class="dropdown-menu  dropdown-menu-right">
+                <ul class="dropdown-menu dropdown-menu-right">
                     <li>
                         <div class="noti-header">
                             <p>Thông báo</p>
@@ -201,20 +201,46 @@
 
     <div class="container">
         <div class="content row">
-            <div class="col-xs-12 pd-10 border bg-white" style="padding-top: 20px;">
+            <div class="col-xs-12 pd-10 bg-white" style="padding-top: 20px; border-radius: 10px">
                 <div class="text-right">
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    <button class="btn btn-primary min-width-150 max-width-200" data-toggle="modal" data-target="#myModal">
                         Tạo mới
                     </button>
                 </div>
                 <table class="table">
                     <thead>
-                        <th>STT</th>
-                        <th>Tên danh mục</th>
-                        <th>Mô tả</th>
-                        <th class="text-right">Thao tác</th>
+                        <th class="hidden-xs">STT</th>
+                        <th class="min-width-100">Tên</th>
+                        <th class="">Mô tả</th>
+                        <th class="hidden-xs text-right">Thao tác</th>
                     </thead>
-                    <tbody>
+                    <tbody class="visibled-xs">
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <p>Điện thoại</p>
+                            </td>
+                            <td style="vertical-align: top;">
+                                <p>Điện thoại / iPhone Điện thoại / iPhone Điện thoại / iPhone</p>
+                                <p class="text-right">
+                                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Sửa</button>
+                                    <button class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">Xóa</button>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <p>Điện thoại</p>
+                            </td>
+                            <td style="vertical-align: top;">
+                                <p>Điện thoại / iPhone</p>
+                                <p class="text-right">
+                                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Sửa</button>
+                                    <button class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">Xóa</button>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="hidden-xs">
                         <tr>
                             <td>1</td>
                             <td>Điện thoại</td>
@@ -225,7 +251,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>1</td>
+                            <td>2</td>
                             <td>iPhone</td>
                             <td>Điện thoại / iPhone</td>
                             <td class="text-right">
@@ -234,7 +260,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>1</td>
+                            <td>3</td>
                             <td>Thời trang</td>
                             <td>Thời trang</td>
                             <td class="text-right">
@@ -298,16 +324,20 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-sm-8">
-                                        <p class="text-justify">Xóa danh mục này và chuyển tất cả sản phẩm sang danh mục hiện có: </p>
-                                        <select class="form-control">
-                                            <option value="">Chọn danh mục</option>
-                                        </select>
+                                        <p class="text-justify">
+                                            Xóa danh mục này và chuyển tất cả sản phẩm sang danh mục hiện có:
+                                        </p>
+                                        <p>
+                                            <select class="form-control">
+                                                <option value="">Chọn danh mục</option>
+                                            </select>
+                                        </p>
                                     </div>
                                     <div class="col-sm-4 text-center">
                                         <button class="btn btn-warning" style="width: 150px">Di chuyển và Xóa</button>
                                     </div>
                                     <div class="clearfix"></div>
-                                    <hr />
+                                    <hr style="margin: 25px 0px" />
                                     <div class="clearfix"></div>
                                     <div class="col-sm-8">
                                         <p class="text-justify">Bạn chắc chắn xóa danh mục này đồng thời xóa hết các sản phẩm thuộc danh mục này</p>
@@ -317,6 +347,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
