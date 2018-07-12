@@ -10,6 +10,12 @@ a.remove i {
     vertical-align: middle;
 }
 
+.fixed-img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
 .ubislider-image-container {
 	background-color: unset;
 	width: unset;
