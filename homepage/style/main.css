@@ -16,6 +16,32 @@ hr {
 .modal-md {
     width: 50%;
 }
+ul.group-menu {
+    margin: 0;
+}
+ul.group-menu li {
+    display: table-cell;
+    position: relative;
+    margin: 0;
+    border: solid 1px #d1d1d1;
+    background-color: grey;
+    list-style: none;
+    min-width: 100px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+ul.group-menu li > .icon-active {
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    margin-bottom: -4px;
+    display: none;
+}
+ul.group-menu li.active > .icon-active {
+    display: inline-block;
+    
+}
 .ubislider-image-container {
     background-color: unset;
     width: unset;
