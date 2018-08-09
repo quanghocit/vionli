@@ -393,8 +393,25 @@
                             <div class="swiper-slide">
                               <img src="images/product/phone2.png">
                             </div>
+                            <div class="swiper-slide">
+                              <img src="images/product/phone2.png">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="images/product/phone2.png">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="images/product/phone2.png">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="images/product/phone2.png">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="images/product/phone2.png">
+                            </div>
                           </div>
                           <div class="swiper-pagination"></div>
+                          <div class="swiper-button-next hidden-xs"></div>
+                          <div class="swiper-button-prev hidden-xs"></div>
                         </div>
                       </div>
                       <div class="col-sm-6 col-md-7">
@@ -1019,12 +1036,16 @@
 
     // CKEDITOR.replace('editor1');
 
-    jQuery("#modal-product").on('show.bs.modal', function(e) {
+    jQuery("#modal-product").on('show.bs.modal', function (e) {
       var swiper;
       setTimeout(function () {
         swiper = new Swiper('.swiper-container', {
           pagination: {
             el: '.swiper-pagination',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
           },
         })
       }, 500);
