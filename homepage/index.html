@@ -964,19 +964,21 @@
     }
 
     var swiper;
-    
+
     jQuery('#modal-product-receive').on('hidden.bs.modal', function (e) {
       jQuery("#modal-product").modal('hide');
     })
 
+    setTimeout(function () {
+      swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      })
+    }, 1000);
+
     $(document).ready(function () {
-      setTimeout(function () {
-        swiper = new Swiper('.swiper-container', {
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        })
-      }, 500);
+
       // $('#slider').ubislider({
       //   arrowsToggle: true,
       //   type: 'ecommerce',
