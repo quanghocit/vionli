@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vionli - Nơi chia sẻ cơ hội kinh doanh</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+
+    <div class="fb-share-button" data-href="https://tiki.vn/" data-layout="box_count" data-size="large" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
+
+    <div class="fb-share-button" data-href="https://www.lazada.vn/" data-layout="box_count" data-size="large" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
+
+    <div class="zalo-share-button" data-href="https://dev.vionli.com" data-oaid="579745863508352884" data-layout="2" data-color="white" data-customize=false></div>
+
+    <button onclick="redirect()">Test facebook</button>
+
+    <script type="text/javascript">
+        function redirect() {
+            window.open("https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https%3A%2F%2Fwww.lazada.vn%2F&display=popup&ref=plugin&src=share_button", '', 'width=300,height=200');
+        }
+    </script>
+
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.1&appId=130979634124550&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+</body>
+
+</html> 
