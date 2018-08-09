@@ -1,0 +1,17 @@
+.notification > table {
+  border-top: solid 1px #d1d1d1;
+}
+.notification > table > tbody > tr > td {
+  background-color: #d1d1d1;
+}
+.notification > table > tbody > tr.active > td {
+  background-color:#fff !important;
+}
+.content {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+}
+.content > ul {
+  border-radius: 15px;
+}
