@@ -1,8 +1,8 @@
 .notification > table {
-  border-top: solid 1px #d1d1d1;
+  border-top: solid 1px #e5e2e282;
 }
 .notification > table > tbody > tr > td {
-  background-color: #d1d1d1;
+  background-color: #e5e2e282;
 }
 .notification > table > tbody > tr.active > td {
   background-color:#fff !important;
