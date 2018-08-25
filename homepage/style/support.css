@@ -1,3 +1,4 @@
+
 ul.menu-support {
 
 }
@@ -16,6 +17,15 @@ ul.menu-support > li.active {
 
 .support-content {
 	border-radius: 10px;
+}
+
+.icon-color {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.icon-circle .icon-text {
+	float: left;
 }
 
 .support-header {
@@ -38,7 +48,6 @@ ul.vionli-menu > li.min-width-50 {
 }
 
 .support-body {
-	text-align: center;
 	background-color: #ffffff;
 	padding: 10px;
 	min-height: 200px;
