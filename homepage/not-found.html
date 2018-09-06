@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/loading.css">
+    
     <style type="text/css">
         html {background: #fff}
+        .alertify .ajs-header {
+            background-color: #d1d1d1;
+        }
     </style>
 </head>
 
@@ -155,6 +160,21 @@
             <button class="btn btn-dark btn-lg" style="min-width: 200px; border-radius: 30px">Về trang chủ</button>
         </div>
     </div>
+
+    <!-- <div class="bubblingG">
+        <span id="bubblingG_1">
+        </span>
+        <span id="bubblingG_2">
+        </span>
+        <span id="bubblingG_3">
+        </span>
+    </div> -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript">
+        alertify.success("This is an alert dialog.");
+    </script>
 </body>
 
 </html>     

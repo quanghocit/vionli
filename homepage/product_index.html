@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/product-index.css">
     <link rel="stylesheet" href="style/pretty-checkbox.min.css"/>
+    <link rel="stylesheet" href="alertifyjs/css/alertify.min.css">
+    <link rel="stylesheet" href="style/alertify.custom.css">
 </head>
 
 <body>
@@ -350,7 +352,7 @@
                                                 <small>Ngày đăng: 30/06/2018</small>
                                             </div>
                                             <div class="clearfix"></div>
-                                            <button class="btn btn-success btn-sm min-width-150 hidden">Hủy chia sẻ</button>
+                                            <button class="btn btn-success btn-sm min-width-150 hidden unshare">Hủy chia sẻ</button>
                                             <button class="btn btn-success btn-sm min-width-150" data-toggle="modal" data-target="#modal-product-receive">Chia sẻ sản phẩm</button>
                                         </td>
                                         <td class="text-right">
@@ -403,7 +405,7 @@
                                                 <small>Ngày đăng: 30/06/2018</small>
                                             </div>
                                             <div class="clearfix"></div>
-                                            <button class="btn btn-success bold btn-sm min-width-150">Hủy chia sẻ</button>
+                                            <button class="btn btn-success bold btn-sm min-width-150 unshare">Hủy chia sẻ</button>
                                             <button class="btn btn-success btn-sm min-width-150 hidden" data-toggle="modal" data-target="#modal-product-receive">Chia sẻ sản phẩm</button>
                                         </td>
                                         <td class="text-right">
@@ -1391,6 +1393,8 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/ubislider.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+    <script src="alertifyjs/alertify.min.js"></script>
+
     <script type="text/javascript">
         function calCommission() {
             var commission = jQuery("#commission").val();
@@ -1452,6 +1456,9 @@
                 $(".search_show").addClass("hidden");
                 $(".search_show").removeClass("visible-xs-inline");
                 $(".search_form").removeClass("hidden-xs");
+            })
+            $(".unshare").click(function() {
+                alertify.notify('Hủy chia sẻ không thành công', 'danger', 1005, function(){  console.log('dismissed'); });
             })
         });
     </script>
